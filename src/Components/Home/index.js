@@ -19,19 +19,20 @@ export default class Home extends Component {
               <div className="home-top-content-inner-l">
                 <div className="home-top-content-inner-l-1">
                   <div>
-                    <span className="t-bg-color p-text-col">
-                      some texts here
-                    </span>
+                    <pre>
+                      <span className="t-bg-color p-text-col">
+                        OPEN TO WORK
+                      </span>
+                    </pre>
                   </div>
 
                   <div>
                     <p className="home-top-content-inner-l-1-h">
-                      Talk is cheap come lets talkssssssssssssss
+                      Full Stack Web Developer <pre>with</pre>
                     </p>
                   </div>
                   <span className="t-text-col">
-                    some texts some texts some texts some texts
-                    sssssssssssssssssssss
+                    odindin big two years experience, e soak ooo.
                   </span>
                   <br />
                   <a
@@ -85,7 +86,9 @@ export default class Home extends Component {
                 </div>
                 <span>Front End</span>
                 <br />
-                <span className="t-text-col">All frontend projects here</span>
+                <span className="t-text-col">
+                  See All Frontend Projects Here
+                </span>
                 <p>
                   {" "}
                   <NavLink to="/projects/frontend" className="s-text-col">
@@ -102,7 +105,9 @@ export default class Home extends Component {
                 </div>
                 <span>BackEnd</span>
                 <br />
-                <span className="t-text-col">All backend projects here</span>
+                <span className="t-text-col">
+                  See All Backend Projects Here
+                </span>
                 <p>
                   {" "}
                   <NavLink to="/projects/backend" className="s-text-col">
@@ -119,12 +124,9 @@ export default class Home extends Component {
               <p className="about-name">Hello! I'm Fatimah Davies</p>
               <p>Taking every development to the next level</p>
               <div className="t-text-col">
-                avout me avout mevvavout meavout meavout me v avout me avout me
-                avout me avout me v avout me avout me avout meavout me avout mev
-                avout me avout me avout me avout me avout mev avout me avout
-                mevvavout meavout meavout me v avout me avout me avout me avout
-                me v avout me avout avout me avout mevvavout meavout meavout me
-                v avout me avout me avout me avout me v avout me avout
+                Paying attention to details and wanting to deliver the best has
+                been a thing i keep in mind. Clients satisfaction takes a bigger
+                place in my heart and this makes me deliver good stuff
               </div>
             </div>
           </div>
@@ -173,17 +175,33 @@ export default class Home extends Component {
                 <p>
                   <b>Latest Works</b>
                 </p>
-                <span className="t-text-col">hhhhhhhhhhhhhhhhh</span>
+                <span className="t-text-col">
+                  Recent projects i been on mehnn. omo ko easy
+                </span>
               </div>
               <div className="latest-works-l-img-con latest-works-l-inner-1">
                 <div className="latest-works-l-img">
                   <div className="latest-works-l-img-h container-fluid flex space-between align-center">
                     <p>
-                      <b>Project name</b>
+                      <span>CarPark Booking</span>
                     </p>
+                    <div>ReactJs/Css/NodeJs</div>
                     <div className="flex">
-                      <i className="fa fa-github"></i>
+                      <a
+                        href="https://github.com/Fatimah019/CarParkSpace/"
+                        className="g-text-col"
+                      >
+                        <i className="fa fa-github"></i>
+                      </a>
                     </div>
+                  </div>
+                  <div className="text-center visit-site-link">
+                    <a
+                      href="https://parkcar.netlify.app"
+                      className="t-text-col"
+                    >
+                      Visit Site
+                    </a>
                   </div>
                 </div>
               </div>
@@ -209,27 +227,44 @@ export default class Home extends Component {
             <div className="latest-works-r-inner">
               <div className="latest-works-r-p-2">
                 <div className="latest-works-r-p-2-img-con">
-                  <div className="latest-works-r-p-2-img">
+                  <div className="latest-works-r-p-2-img-1">
                     <div className="container-fluid flex space-between align-center">
-                      <p>ParkCar</p>
-                      <a href="www" className="g-text-col">
+                      <span>Find A Seller</span>
+                      <div>ReactJs/Css/NodeJs</div>
+                      <a
+                        href="https://github.com/Fatimah019/FindASeller"
+                        className="g-text-col"
+                      >
                         <i className="fa fa-github"></i>
+                      </a>
+                    </div>
+                    <div className="text-center visit-site-link">
+                      <a
+                        href="https://findaseller.herokuapp.com/"
+                        className="t-text-col"
+                      >
+                        Visit Site
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="latest-works-r-p-2"></div>
             </div>
             {/* -------------- */}
             <div className="latest-works-r-inner">
               <div className="latest-works-r-p-2">
                 <div className="latest-works-r-p-2-img-con">
-                  <div className="latest-works-r-p-2-img">
+                  <div className="latest-works-r-p-2-img-2">
                     <div className="container-fluid flex space-between align-center">
-                      <p>ParkCar</p>
+                      <span>CarPark Booking</span>
+                      <div>ReactJs/Css/NodeJs</div>
                       <a href="www" className="g-text-col">
                         <i className="fa fa-github"></i>
+                      </a>
+                    </div>
+                    <div className="text-center visit-site-link">
+                      <a href="ss" className="t-text-col">
+                        Visit Site
                       </a>
                     </div>
                   </div>
