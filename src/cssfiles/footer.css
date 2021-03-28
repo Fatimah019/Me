@@ -36,7 +36,7 @@ footer nav ul li .active {
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   footer {
     width: 90%;
     flex-direction: column;

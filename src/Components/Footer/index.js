@@ -26,7 +26,10 @@ export default class Footer extends Component {
               </p>
               <p>
                 <b>
-                  Start by <span className="s-text-col">saying hi</span>
+                  Start by{" "}
+                  <a href={`mailto:${email}`} className="s-text-col">
+                    saying hi
+                  </a>
                 </b>
               </p>
             </div>

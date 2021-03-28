@@ -43,19 +43,19 @@ export default class Home extends Component {
                 </div>
                 <div className="home-top-content-inner-l-2">
                   <div className="flex align-center home-top-content-inner-l-2-n">
-                    <p>12</p>
+                    <p>6</p>
                     <div>
-                      <span className="t-text-col">sssss</span>
+                      <span className="t-text-col">Frontend</span>
                       <br />
-                      <span className="t-text-col">sssss</span>
+                      <span className="t-text-col">projects</span>
                     </div>
                   </div>
                   <div className="flex align-center home-top-content-inner-l-2-n">
-                    <p>20</p>
+                    <p>2</p>
                     <div>
-                      <span className="t-text-col">sssss</span>
+                      <span className="t-text-col">Backend</span>
                       <br />
-                      <span className="t-text-col">sssss</span>
+                      <span className="t-text-col">projects</span>
                     </div>
                   </div>
                 </div>
@@ -131,17 +131,39 @@ export default class Home extends Component {
         </div>
 
         {/* skills */}
-        {/* <div className="skills">
-          <p>Reactjs</p>
-          <p>VueJs</p>
-          <p>Git</p>
-          <p>MongoDb</p>
-          <p>NodeJs</p>
-          <p>Html</p>
-          <p>Css</p>
-          <p>JavaScript</p>
-          <p>SASS</p>
-        </div> */}
+        <div className="skills">
+          <div>
+            <p>Reactjs</p>
+          </div>
+          <div>
+            <p>VueJs</p>
+          </div>
+          <div>
+            {" "}
+            <p>Git</p>
+          </div>
+          <div>
+            <p>MongoDb</p>
+          </div>
+          <div>
+            <p>NodeJs</p>
+          </div>
+          <div>
+            {" "}
+            <p>Html</p>
+          </div>
+          <div>
+            <p>Css</p>
+          </div>
+          <div>
+            {" "}
+            <p>JavaScript</p>
+          </div>
+          <div>
+            {" "}
+            <p>SASS</p>
+          </div>
+        </div>
 
         {/* latest works */}
         <div className="latest-works align-center">

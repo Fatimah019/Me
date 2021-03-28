@@ -164,11 +164,21 @@ home-second-layer
 skillls
 */
 .skills {
-  width: 70%;
+  width: 50%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  grid-gap: 1rem;
+  margin-bottom: 30px;
+}
+.skills div {
+  text-align: center;
+  width: 100%;
 }
 
 /* latest works */
@@ -327,5 +337,21 @@ skillls
   .latest-works-l-inner-1 span,
   .latest-works-l-inner-1 .contact-link-proj {
     display: none;
+  }
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills {
+    transform: rotate(45deg);
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 }
