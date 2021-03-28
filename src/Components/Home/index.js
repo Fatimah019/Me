@@ -1,119 +1,17 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import Header from "../Header";
+import Footer from "../Footer";
 import "../../cssfiles/home.css";
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showNavmenu: false,
-      active: false,
-      backgroundColor: "transparent",
-      borderRadius: "0px",
-      boxShadow: "none",
-      backdropFilter: "blur(0px)",
-      padding: "0px 0px",
-      width: "85%",
-    };
-  }
-  changeClass = () => {
-    this.setState({
-      active: true,
-    });
-  };
-  handleNavBar = () => {
-    this.setState({
-      showNavmenu: true,
-    });
-  };
-  closeNavMenu = () => {
-    this.setState({
-      showNavmenu: false,
-    });
-  };
-  changeHeaderOnScroll = (e) => {
-    if (window.scrollY > 80) {
-      this.setState({
-        backgroundColor: "rgba(110, 110, 110, 0.7)",
-        borderRadius: "30px",
-        boxShadow: "0 4px 2px 0 rgb(136, 135, 135)",
-        backdropFilter: "blur(20px)",
-        padding: "0px 5px",
-      });
-    } else {
-      this.setState({
-        backgroundColor: "transparent",
-        borderRadius: "0px",
-        boxShadow: "none",
-        backdropFilter: "blur(0px)",
-        padding: "0px 0px",
-      });
-    }
-  };
-  componentDidMount() {
-    window.addEventListener("scroll", this.changeHeaderOnScroll);
-  }
   render() {
-    const style = this.state.showNavmenu ? { display: "block" } : {};
-    const headerStyle = {
-      backgroundColor: this.state.backgroundColor,
-      borderRadius: this.state.borderRadius,
-      boxShadow: this.state.boxShadow,
-      backdropFilter: this.state.backdropFilter,
-      padding: this.state.padding,
-    };
-
     return (
       <div className="home">
         {/* home-top */}
         <div className="home-top">
-          <header style={headerStyle}>
-            <nav>
-              <p className="name">
-                Fatimah<span>Davies</span>
-              </p>
-              <ul>
-                <li>
-                  <NavLink
-                    to="/"
-                    exact
-                    className={this.state.active ? "active" : "inactive"}
-                  >
-                    Me
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/projects"
-                    className={this.state.active ? "active" : "inactive"}
-                  >
-                    Projects
-                  </NavLink>
-                </li>
-              </ul>
-            </nav>
-
-            {/* right header */}
-            <div className="socials hide-mobile" style={style}>
-              <i className="fa fa-github"> Github</i>
-              <i className="fa fa-twitter"> Twitter</i>
-              <i className="fa fa-phone"> Phone</i>
-            </div>
-            <div className="show-mobile">
-              <i className="fa fa-bars" onClick={() => this.handleNavBar()}></i>
-              {/* {!this.showNavmenu ? (
-                  <i className="fa fa-bars" onClick={() => this.handleNavBar()}>
-                    open
-                  </i>
-                ) : (
-                  <i className="fa fa-close" onClick={() => this.closeNavMenu()}>
-                    close
-                  </i>
-                )} */}
-            </div>
-            {/* end right header */}
-          </header>
-
+          {/* put header */}
+          <Header />
           {/* home top content */}
           <div className="home-top-content">
             <div className="home-top-content-inner">
@@ -158,7 +56,7 @@ export default class Home extends Component {
               </div>
               <div className="home-top-content-inner-r">
                 <img
-                  src="https://res.cloudinary.com/dycyotaya/image/upload/v1572175377/my-photo_puy5gn.jpg"
+                  src="https://res.cloudinary.com/dycyotaya/image/upload/v1616914740/fatimaheditedbckg_mefdki.jpg"
                   alt="img"
                   className="img"
                 />
@@ -210,16 +108,18 @@ export default class Home extends Component {
             {/* 3 */}
           </div>
           <div className="home-second-layer-r">
-            <span className="t-text-col">About Me</span>
-            <p className="about-name">Hello! I'm Fatimah Davies</p>
-            <p>Taking every development to the next level</p>
-            <div className="t-text-col">
-              avout me avout mevvavout meavout meavout me v avout me avout me
-              avout me avout me v avout me avout me avout meavout me avout mev
-              avout me avout me avout me avout me avout mev avout me avout
-              mevvavout meavout meavout me v avout me avout me avout me avout me
-              v avout me avout avout me avout mevvavout meavout meavout me v
-              avout me avout me avout me avout me v avout me avout
+            <div className="home-second-layer-r-div">
+              <span className="t-text-col">About Me</span>
+              <p className="about-name">Hello! I'm Fatimah Davies</p>
+              <p>Taking every development to the next level</p>
+              <div className="t-text-col">
+                avout me avout mevvavout meavout meavout me v avout me avout me
+                avout me avout me v avout me avout me avout meavout me avout mev
+                avout me avout me avout me avout me avout mev avout me avout
+                mevvavout meavout meavout me v avout me avout me avout me avout
+                me v avout me avout avout me avout mevvavout meavout meavout me
+                v avout me avout me avout me avout me v avout me avout
+              </div>
             </div>
           </div>
         </div>
@@ -239,36 +139,79 @@ export default class Home extends Component {
 
         {/* latest works */}
         <div className="latest-works align-center">
-          <div>ww</div>
-          <div className="latest-works-r">
-            <div className="latest-works-r-p-2">
-              <div className="flex space-between align-center latest-works-r-p-2-p">
-                <p>ParkCar</p>
-                <a href="www">
-                  <i className="fa fa-github"></i>
-                </a>
+          <div className="latest-works-l">
+            <div className="latest-works-l-inner">
+              <div className="latest-works-l-inner-1 text-center">
+                <p>
+                  <b>Latest Works</b>
+                </p>
+                <span className="t-text-col">hhhhhhhhhhhhhhhhh</span>
               </div>
-              <div className="visit-site">
-                <a href="ll" className="visit-site-link">
-                  View Site
-                </a>
+              <div className="latest-works-l-img-con latest-works-l-inner-1">
+                <div className="latest-works-l-img">
+                  <div className="latest-works-l-img-h container-fluid flex space-between align-center">
+                    <p>
+                      <b>Project name</b>
+                    </p>
+                    <div className="flex">
+                      <i className="fa fa-github"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="latest-works-r-p-2">
-              <div className="flex space-between align-center latest-works-r-p-2-p">
-                <p>ParkCar</p>
-                <a href="www">
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="visit-site">
-                <a href="ll" className="visit-site-link">
-                  View Site
-                </a>
+
+              <div className="latest-works-l-inner-1 flex-col flex-start">
+                <p className="contact-link-proj">
+                  <b>
+                    <NavLink to="/all/projects" className="s-text-col">
+                      ALL PROJECTS
+                    </NavLink>
+                  </b>
+                </p>
+                <span className="t-text-col">
+                  if you have a reason to workk with me then{" "}
+                  <NavLink to="/co" className="s-text-col">
+                    Let's Talk
+                  </NavLink>
+                </span>
               </div>
             </div>
           </div>
+          <div className="latest-works-r">
+            <div className="latest-works-r-inner">
+              <div className="latest-works-r-p-2">
+                <div className="latest-works-r-p-2-img-con">
+                  <div className="latest-works-r-p-2-img">
+                    <div className="container-fluid flex space-between align-center">
+                      <p>ParkCar</p>
+                      <a href="www" className="g-text-col">
+                        <i className="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="latest-works-r-p-2"></div>
+            </div>
+            {/* -------------- */}
+            <div className="latest-works-r-inner">
+              <div className="latest-works-r-p-2">
+                <div className="latest-works-r-p-2-img-con">
+                  <div className="latest-works-r-p-2-img">
+                    <div className="container-fluid flex space-between align-center">
+                      <p>ParkCar</p>
+                      <a href="www" className="g-text-col">
+                        <i className="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* ---------- */}
+          </div>
         </div>
+        <Footer />
       </div>
     );
   }
