@@ -1,0 +1,14 @@
+.projects-header {
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
+}
+.projects-header nav .inactive {
+  color: #fff;
+  margin-left: 15px;
+}
+.projects-header nav .active {
+  color: rgb(17, 248, 17);
+  font-weight: 800;
+  font-size: 18px;
+}

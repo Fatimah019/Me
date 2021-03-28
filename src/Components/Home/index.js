@@ -6,6 +6,7 @@ import "../../cssfiles/home.css";
 
 export default class Home extends Component {
   render() {
+    const email = "daviesfatimah97@gmail.com";
     return (
       <div className="home">
         {/* home-top */}
@@ -33,7 +34,12 @@ export default class Home extends Component {
                     sssssssssssssssssssss
                   </span>
                   <br />
-                  <p className="home-top-chat-link s-text-col">Let's Chat</p>
+                  <a
+                    href={`mailto:${email}`}
+                    className="home-top-chat-link s-text-col"
+                  >
+                    Let's Chat
+                  </a>
                 </div>
                 <div className="home-top-content-inner-l-2">
                   <div className="flex align-center home-top-content-inner-l-2-n">

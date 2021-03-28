@@ -7,7 +7,7 @@ export default class Header extends Component {
     super(props);
     this.state = {
       showNavmenu: false,
-      showNavmenuicon: false,
+      showopenicon: true,
       active: false,
       backgroundColor: "transparent",
       borderRadius: "0px",
@@ -25,11 +25,14 @@ export default class Header extends Component {
   handleNavBar = () => {
     this.setState({
       showNavmenu: true,
+      showopenicon: false,
     });
   };
+
   closeNavMenu = () => {
     this.setState({
       showNavmenu: false,
+      showopenicon: true,
     });
   };
   changeHeaderOnScroll = (e) => {
@@ -63,13 +66,14 @@ export default class Header extends Component {
       padding: this.state.padding,
     };
     const style = this.state.showNavmenu ? { display: "block" } : {};
+    const email = this.props.email;
     return (
       <div>
         <header style={headerStyle}>
           <nav>
-            <p className="name">
+            <NavLink to="/" className="name">
               Fatimah<span>Davies</span>
-            </p>
+            </NavLink>
             <ul>
               <li>
                 <NavLink
@@ -82,7 +86,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="/projects"
+                  to="/projects/frontend"
                   className={this.state.active ? "active" : "inactive"}
                 >
                   Projects
@@ -109,19 +113,37 @@ export default class Header extends Component {
                   <i className="fa fa-phone"> Phone</i>
                 </a>
               </li>
+              <li>
+                <a href={`mailto:${email}`}>
+                  <i className="fa fa-envelope"></i>
+                </a>
+              </li>
             </ul>
           </div>
-          {!this.showNavmenuicon ? (
-            <i
-              className="fa fa-bars show-mobile"
-              onClick={() => this.handleNavBar()}
-            ></i>
-          ) : (
+          {/* {this.showNavmenuicon ? (
             <i
               className="fa fa-close show-mobile"
               onClick={() => this.closeNavMenu()}
             ></i>
-          )}
+          ) : (
+            <i
+              className="fa fa-bars show-mobile"
+              onClick={() => this.handleNavBar()}
+            ></i>
+          )} */}
+          <div className="show-mobile">
+            {this.state.showopenicon ? (
+              <i
+                className="fa fa-bars show-mobile"
+                onClick={() => this.handleNavBar()}
+              ></i>
+            ) : (
+              <i
+                className="fa fa-close show-mobile"
+                onClick={() => this.closeNavMenu()}
+              ></i>
+            )}
+          </div>
           {/* end right header */}
         </header>
       </div>

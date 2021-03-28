@@ -15,6 +15,7 @@ export default class Footer extends Component {
     });
   };
   render() {
+    const email = "daviesfatimah97@gmail.com";
     return (
       <div className="footer">
         <footer>
@@ -40,7 +41,11 @@ export default class Footer extends Component {
           <div className="flex-col">
             <pre className="t-text-col">Ikotun, Lagos, Nigeria.</pre>
             <pre>
-              <b>fatimahdavies97@gmail.com</b>
+              <b>
+                <a href={`mailto:${email}`} className="g-text-col">
+                  daviesfatimah97@gmail.com
+                </a>
+              </b>
             </pre>
             <nav>
               <ul>
@@ -55,7 +60,7 @@ export default class Footer extends Component {
                 </li>
                 <li>
                   <NavLink
-                    to="/projects"
+                    to="/projects/frontend"
                     className={this.state.active ? "active" : "inactive"}
                   >
                     Projects
