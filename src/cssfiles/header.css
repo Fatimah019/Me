@@ -83,6 +83,7 @@ media queries
   .hide-mobile ul {
     flex-direction: column;
     height: 60%;
+    margin-top: 80px;
     align-items: center;
     justify-content: space-evenly;
   }
