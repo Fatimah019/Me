@@ -92,7 +92,7 @@ export default class Projects extends Component {
               </div>
               <div className="text-center visit-site-link">
                 <a
-                  href="https://devportfolio.herokuapp.com/"
+                  href="https://d-porfolio.herokuapp.com/"
                   className="t-text-col"
                 >
                   Visit Site
