@@ -66,6 +66,7 @@ media queries
   .show-mobile {
     display: inline;
   }
+
   .hide-mobile {
     display: none;
     position: fixed;
@@ -85,7 +86,11 @@ media queries
     align-items: center;
     justify-content: space-evenly;
   }
+
   .socials ul li {
     margin-left: 0px;
+  }
+  header nav ul {
+    margin-left: 10px;
   }
 }
