@@ -182,18 +182,14 @@ export default class Home extends Component {
               <div className="latest-works-l-img-con latest-works-l-inner-1">
                 <div className="latest-works-l-img">
                   <div className="latest-works-l-img-h container-fluid flex space-between align-center">
-                    <p>
-                      <span>CarPark Booking</span>
-                    </p>
+                    <span>CarPark Booking</span>
                     <div>ReactJs/Css/NodeJs</div>
-                    <div className="flex">
-                      <a
-                        href="https://github.com/Fatimah019/CarParkSpace/"
-                        className="g-text-col"
-                      >
-                        <i className="fa fa-github"></i>
-                      </a>
-                    </div>
+                    <a
+                      href="https://github.com/Fatimah019/CarParkSpace/"
+                      className="g-text-col"
+                    >
+                      <i className="fa fa-github"></i>
+                    </a>
                   </div>
                   <div className="text-center visit-site-link">
                     <a
@@ -216,9 +212,9 @@ export default class Home extends Component {
                 </p>
                 <span className="t-text-col">
                   if you have a reason to workk with me then{" "}
-                  <NavLink to="/co" className="s-text-col">
+                  <a href="tel:07088780115" className="s-text-col">
                     Let's Talk
-                  </NavLink>
+                  </a>
                 </span>
               </div>
             </div>
@@ -228,7 +224,7 @@ export default class Home extends Component {
               <div className="latest-works-r-p-2">
                 <div className="latest-works-r-p-2-img-con">
                   <div className="latest-works-r-p-2-img-1">
-                    <div className="container-fluid flex space-between align-center">
+                    <div className="container-fluid flex space-between align-center latest-works-r-p-2-img-2-h">
                       <span>Find A Seller</span>
                       <div>ReactJs/Css/NodeJs</div>
                       <a
@@ -255,16 +251,22 @@ export default class Home extends Component {
               <div className="latest-works-r-p-2">
                 <div className="latest-works-r-p-2-img-con">
                   <div className="latest-works-r-p-2-img-2">
-                    <div className="container-fluid flex space-between align-center">
-                      <span>CarPark Booking</span>
-                      <div>ReactJs/Css/NodeJs</div>
-                      <a href="www" className="g-text-col">
+                    <div className="container-fluid flex space-between align-center latest-works-r-p-2-img-2-h">
+                      <span>Blog Site</span>
+                      <div>NodeJs/MonoDb</div>
+                      <a
+                        href="https://github.com/Fatimah019/RevieApi"
+                        className="g-text-col"
+                      >
                         <i className="fa fa-github"></i>
                       </a>
                     </div>
                     <div className="text-center visit-site-link">
-                      <a href="ss" className="t-text-col">
-                        Visit Site
+                      <a
+                        href="https://documenter.getpostman.com/view/11223454/Tz5s4wUj"
+                        className="t-text-col"
+                      >
+                        See Documentation
                       </a>
                     </div>
                   </div>
@@ -274,7 +276,9 @@ export default class Home extends Component {
             {/* ---------- */}
           </div>
         </div>
-        <Footer />
+        <div className="home-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

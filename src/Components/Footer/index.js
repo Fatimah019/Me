@@ -22,7 +22,7 @@ export default class Footer extends Component {
           <div className="flex-col space-around">
             <div>
               <p>
-                <b>Let's make something amzing together.</b>
+                <b>Let's make something amazing together.</b>
               </p>
               <p>
                 <b>
