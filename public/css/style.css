@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
 *:root {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   background-color: rgb(34, 34, 34);
   color: #fff;
   position: relative;
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: 'Lora', cursive;
   font-size: 1rem;
 }
 .p-text-col {
