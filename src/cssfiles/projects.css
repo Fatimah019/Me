@@ -24,7 +24,7 @@
 .project-list {
   width: 85%;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 140px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
@@ -69,9 +69,6 @@
 }
 .visit-site-link {
   height: 85%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .visit-site-link a {
   background-color: rgb(45, 45, 45);
@@ -83,7 +80,6 @@
   font-weight: bolder;
 }
 .progress-con {
-  /* padding: 5px 0px; */
   background-color: rgb(45, 45, 45);
   border-radius: 20px;
   font-size: 10px;

@@ -28,11 +28,15 @@ export default class Home extends Component {
 
                   <div>
                     <p className="home-top-content-inner-l-1-h">
-                      Full Stack Web Developer <pre>with</pre>
+                      Front End Web Developer
                     </p>
+                    <pre>
+                      <b>with</b>
+                    </pre>
                   </div>
                   <span className="t-text-col">
-                    odindin big two years experience, e soak ooo.
+                    two years experience of building beautiful and amazing
+                    websites.
                   </span>
                   <br />
                   <a

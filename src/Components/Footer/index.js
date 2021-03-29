@@ -41,7 +41,7 @@ export default class Footer extends Component {
               <pre className="t-text-col">2020 all rights reserved</pre>
             </div>
           </div>
-          <div className="flex-col">
+          <div className="flex-col footer-r">
             <pre className="t-text-col">Ikotun, Lagos, Nigeria.</pre>
             <pre>
               <b>
@@ -51,7 +51,7 @@ export default class Footer extends Component {
               </b>
             </pre>
             <nav>
-              <ul>
+              <ul className="footer-nav">
                 <li>
                   <NavLink
                     to="/"
@@ -61,6 +61,7 @@ export default class Footer extends Component {
                     Me
                   </NavLink>
                 </li>
+                <br />
                 <li>
                   <NavLink
                     to="/projects/frontend"
@@ -71,6 +72,37 @@ export default class Footer extends Component {
                 </li>
               </ul>
             </nav>
+            {/* socials */}
+            <div>
+              <ul className="flex footer-social">
+                <li>
+                  <a
+                    href="https://github.com/Fatimah019"
+                    className="t-text-col"
+                  >
+                    <i className="fa fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/codewithfatimah"
+                    className="t-text-col"
+                  >
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+234 7088 78 0115" className="t-text-col">
+                    <i className="fa fa-phone"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href={`mailto:${email}`} className="t-text-col">
+                    <i className="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import "../../cssfiles/home.css";
+import "../../cssfiles/header.css";
 
 export default class Header extends Component {
   constructor(props) {
@@ -35,6 +35,7 @@ export default class Header extends Component {
       showopenicon: true,
     });
   };
+
   changeHeaderOnScroll = (e) => {
     if (window.scrollY > 80) {
       this.setState({
@@ -54,9 +55,11 @@ export default class Header extends Component {
       });
     }
   };
+
   componentDidMount() {
     window.addEventListener("scroll", this.changeHeaderOnScroll);
   }
+
   render() {
     const headerStyle = {
       backgroundColor: this.state.backgroundColor,
@@ -66,7 +69,7 @@ export default class Header extends Component {
       padding: this.state.padding,
     };
     const style = this.state.showNavmenu ? { display: "block" } : {};
-    const email = this.props.email;
+    const email = "daviesfatimah97@gmail.com";
     return (
       <div>
         <header style={headerStyle}>
@@ -120,17 +123,7 @@ export default class Header extends Component {
               </li>
             </ul>
           </div>
-          {/* {this.showNavmenuicon ? (
-            <i
-              className="fa fa-close show-mobile"
-              onClick={() => this.closeNavMenu()}
-            ></i>
-          ) : (
-            <i
-              className="fa fa-bars show-mobile"
-              onClick={() => this.handleNavBar()}
-            ></i>
-          )} */}
+
           <div className="show-mobile">
             {this.state.showopenicon ? (
               <i
