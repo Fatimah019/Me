@@ -5,6 +5,9 @@ import Footer from "../Footer";
 import "../../cssfiles/home.css";
 
 export default class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const email = "daviesfatimah97@gmail.com";
     return (

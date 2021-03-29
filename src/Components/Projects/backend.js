@@ -11,6 +11,9 @@ export default class Backend extends Component {
       active: false,
     };
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>

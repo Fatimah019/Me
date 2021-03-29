@@ -17,10 +17,10 @@ header nav {
   align-items: center;
 }
 header nav .name {
-  font-weight: 900;
+  font-weight: 800;
   color: #fff;
   font-family: "Tangerine", serif;
-  font-size: 32px;
+  font-size: 28px;
   text-shadow: 2px 2px 4px #aaa;
 }
 header nav span {
@@ -31,11 +31,11 @@ header nav ul {
   margin: 0;
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 header nav ul li .inactive {
   color: #fff;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 header nav ul li .active {
   color: rgb(17, 248, 17);
@@ -90,8 +90,5 @@ media queries
 
   .socials ul li {
     margin-left: 0px;
-  }
-  header nav ul {
-    margin-left: 10px;
   }
 }

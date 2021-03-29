@@ -9,7 +9,7 @@
   left: 7.5%;
   right: 7.5%;
   top: 80px;
-  z-index: 999999;
+  z-index: 99;
 }
 .projects-header nav .inactive {
   color: #fff;
@@ -28,6 +28,8 @@
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .project-list .proj-1,
 .project-list .proj-2,
