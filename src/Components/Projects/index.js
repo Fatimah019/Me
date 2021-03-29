@@ -81,7 +81,7 @@ export default class Projects extends Component {
             </div>
             <div className="proj-3">
               <div className="container-fluid flex align-center space-between">
-                <span>Dev Website</span>
+                <span>Dev Portfolio</span>
                 <div>ReactJs/Css</div>
                 <a
                   href="https://github.com/Fatimah019/FatimahDaviesO"
@@ -92,7 +92,7 @@ export default class Projects extends Component {
               </div>
               <div className="text-center visit-site-link">
                 <a
-                  href="https://fatimah-davies.herokuapp.com/"
+                  href="https://devportfolio.herokuapp.com/"
                   className="t-text-col"
                 >
                   Visit Site

@@ -31,11 +31,11 @@ export default class Home extends Component {
                       Front End Web Developer
                     </p>
                     <pre>
-                      <b>with</b>
+                      <b>With</b>
                     </pre>
                   </div>
                   <span className="t-text-col">
-                    two years experience of building beautiful and amazing
+                    Two years experience of building beautiful and amazing
                     websites.
                   </span>
                   <br />
@@ -180,7 +180,7 @@ export default class Home extends Component {
                   <b>Latest Works</b>
                 </p>
                 <span className="t-text-col">
-                  Recent projects i been on mehnn. omo ko easy
+                  Recent projects i have been working on.
                 </span>
               </div>
               <div className="latest-works-l-img-con latest-works-l-inner-1">
