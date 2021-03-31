@@ -95,6 +95,14 @@ export default class Header extends Component {
                   Projects
                 </NavLink>
               </li>
+              <li>
+                <a
+                  className="inactive"
+                  href="https://docs.google.com/document/d/1xjRTvnBZaZpyuHITkeP1uIemFB5z7YvN7DEiqSeX10g/edit?usp=drivesdk"
+                >
+                  CV
+                </a>
+              </li>
             </ul>
           </nav>
 

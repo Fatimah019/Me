@@ -27,7 +27,7 @@ export default class Projects extends Component {
                 exact
                 className={this.state.active ? "active" : "inactive"}
               >
-                FrontEnd
+                FrontEnd/FullStack
               </NavLink>
               <NavLink
                 to="/projects/backend"

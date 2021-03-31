@@ -91,10 +91,10 @@ export default class Home extends Component {
                 <div className="text-right">
                   <i className="fa fa-folder"></i>
                 </div>
-                <span>Front End</span>
+                <span> FrontEnd/FullStack</span>
                 <br />
                 <span className="t-text-col">
-                  See All Frontend Projects Here
+                  See All Frontend/FullStack Projects Here
                 </span>
                 <p>
                   {" "}
