@@ -98,7 +98,7 @@ export default class Header extends Component {
               <li>
                 <a
                   className="inactive"
-                  href="https://docs.google.com/document/d/1xjRTvnBZaZpyuHITkeP1uIemFB5z7YvN7DEiqSeX10g/edit?usp=drivesdk"
+                  href="https://res.cloudinary.com/dycyotaya/image/upload/v1617241537/FatimahDaviesO_b86l1g.pdf"
                 >
                   CV
                 </a>
