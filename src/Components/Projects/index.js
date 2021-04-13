@@ -59,7 +59,7 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="container progress-con">
-                <div className="half-complete text-center">50%</div>
+                <div className="eightyperc text-center">80%</div>
               </div>
             </div>
             <div className="proj-2">
@@ -123,7 +123,7 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="container progress-con">
-                <div className="eightyperc text-center">80%</div>
+                <div className="complete text-center">100%</div>
               </div>
             </div>
             <div className="proj-5">
@@ -151,10 +151,10 @@ export default class Projects extends Component {
             </div>
             <div className="proj-6">
               <div className="container-fluid flex align-center space-between">
-                <span>Terms In Tech</span>
-                <div>HTML/Css/Js</div>
+                <span>ToDo App</span>
+                <div>ReactJs, Nodejs and Css</div>
                 <a
-                  href="https://github.com/Fatimah019/Fatimah019.github.io/tree/master/technologyterms"
+                  href="https://github.com/Fatimah019/ToDoApp"
                   className="g-text-col"
                 >
                   <i className="fa fa-github"></i>
@@ -162,7 +162,7 @@ export default class Projects extends Component {
               </div>
               <div className="text-center visit-site-link">
                 <a
-                  href="https://fatimah019.github.io/technologyterms/"
+                  href="https://todoappbyme.herokuapp.com/"
                   className="t-text-col"
                 >
                   Visit Site
@@ -172,6 +172,57 @@ export default class Projects extends Component {
                 <div className="complete text-center">100%</div>
               </div>
             </div>
+
+            <div className="proj-4">
+              <div className="container-fluid flex align-center space-between">
+                <span>Covid Cases</span>
+                <div>ReactJs, CSS</div>
+
+                <a
+                  href="https://github.com/Fatimah019/covidcasesN"
+                  className="g-text-col"
+                >
+                  <i className="fa fa-github"></i>
+                </a>
+              </div>
+              <div className="text-center visit-site-link">
+                <a
+                  href="https://covidcasesbyfatimah.netlify.app/"
+                  className="t-text-col"
+                >
+                  Visit Site
+                </a>
+              </div>
+              <div className="container progress-con">
+                <div className="complete text-center">100%</div>
+              </div>
+            </div>
+
+            <div className="proj-4">
+              <div className="container-fluid flex align-center space-between">
+                <span>Dev Portfolio</span>
+                <div>ReactJs, CSS</div>
+
+                <a
+                  href="https://github.com/Fatimah019/NafeesahJimoh"
+                  className="g-text-col"
+                >
+                  <i className="fa fa-github"></i>
+                </a>
+              </div>
+              <div className="text-center visit-site-link">
+                <a
+                  href="https://nofeesahjimoh.herokuapp.com/"
+                  className="t-text-col"
+                >
+                  Visit Site
+                </a>
+              </div>
+              <div className="container progress-con">
+                <div className="complete text-center">100%</div>
+              </div>
+            </div>
+            {/* end of projrcts */}
           </div>
         </div>
         <div className="proj-footer">

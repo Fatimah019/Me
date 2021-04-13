@@ -7,7 +7,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
   background-color: rgb(34, 34, 34);
   color: #fff;
   position: relative;
@@ -94,13 +93,6 @@ a {
   flex-basis: 0;
   flex-grow: 1;
 }
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 20%;
-  flex-grow: 1;
-}
-
 
 @media screen and (max-width: 768px) {
   .flex-row {
@@ -120,15 +112,8 @@ a {
     font-weight: bolder;
   }
 
-/* body {
-  margin: 0;
-  font-family: Lora;
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
