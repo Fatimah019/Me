@@ -31,7 +31,7 @@ export default class Home extends Component {
 
                   <div>
                     <p className="home-top-content-inner-l-1-h">
-                      Front End Web Developer
+                      Web Developer
                     </p>
                     <pre>
                       <b>With</b>
@@ -51,7 +51,7 @@ export default class Home extends Component {
                 </div>
                 <div className="home-top-content-inner-l-2">
                   <div className="flex align-center home-top-content-inner-l-2-n">
-                    <p>6</p>
+                    <p>9</p>
                     <div>
                       <span className="t-text-col">Frontend</span>
                       <br />
@@ -156,6 +156,9 @@ export default class Home extends Component {
           </div>
           <div>
             <p>NodeJs</p>
+          </div>
+          <div>
+            <p>Redux</p>
           </div>
           <div>
             {" "}
