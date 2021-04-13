@@ -43,7 +43,7 @@
   margin: 10px auto;
   padding: 10px 0px;
   height: 200px;
-  background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033422/WhatsApp_Image_2021-03-29_at_8.49.18_AM_2_zmoyln.jpg");
+  /* background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033422/WhatsApp_Image_2021-03-29_at_8.49.18_AM_2_zmoyln.jpg"); */
   background-position: 20px 50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@
   display: flex;
   flex-direction: column;
 }
-.project-list .proj-2 {
+/* .project-list .proj-2 {
   background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033422/WhatsApp_Image_2021-03-29_at_8.49.18_AM_5_j0iqe4.jpg");
 }
 .project-list .proj-3 {
@@ -71,7 +71,7 @@
 }
 .project-list .proj-b-2 {
   background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033423/WhatsApp_Image_2021-03-29_at_8.51.36_AM_1_ovlhnm.jpg");
-}
+} */
 .visit-site-link {
   height: 85%;
 }

@@ -222,6 +222,31 @@ export default class Projects extends Component {
                 <div className="complete text-center">100%</div>
               </div>
             </div>
+
+            <div className="proj-4">
+              <div className="container-fluid flex align-center space-between">
+                <span>Task Manager</span>
+                <div>ReactJs, NodeJs, CSS</div>
+
+                <a
+                  href="https://github.com/Fatimah019/TaskManager"
+                  className="g-text-col"
+                >
+                  <i className="fa fa-github"></i>
+                </a>
+              </div>
+              <div className="text-center visit-site-link">
+                <a
+                  href="https://taskmanagerbyme.herokuapp.com/"
+                  className="t-text-col"
+                >
+                  Visit Site
+                </a>
+              </div>
+              <div className="container progress-con">
+                <div className="complete text-center">100%</div>
+              </div>
+            </div>
             {/* end of projrcts */}
           </div>
         </div>
