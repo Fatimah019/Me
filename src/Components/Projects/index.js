@@ -20,7 +20,7 @@ export default class Projects extends Component {
         <div className="home-top proj-top">
           <Header />
           {/* nav links to all, frontend, and backend projects each */}
-          <div className="projects-header">
+          {/* <div className="projects-header">
             <nav>
               <NavLink
                 to="/projects/frontend"
@@ -36,7 +36,7 @@ export default class Projects extends Component {
                 Backend
               </NavLink>
             </nav>
-          </div>
+          </div> */}
           {/* list of projects */}
           <div className="project-list">
             <div className="proj-1">
@@ -51,6 +51,12 @@ export default class Projects extends Component {
                 </a>
               </div>
               <div className="text-center visit-site-link">
+                <video autoplay loop>
+                  <source
+                    src="https://res.cloudinary.com/dycyotaya/video/upload/v1618816394/Untitled_8_1080p_1_nr0qes.3gp"
+                    type="video/mp4"
+                  ></source>
+                </video>
                 <a
                   href="https://findaseller.herokuapp.com/"
                   className="t-text-col"
@@ -62,24 +68,27 @@ export default class Projects extends Component {
                 <div className="eightyperc text-center">80%</div>
               </div>
             </div>
-            <div className="proj-2">
+            <div className="proj-b-2">
               <div className="container-fluid flex align-center space-between">
-                <span>CarPark Booking</span>
-                <div>ReactJs/Css/NodeJs</div>
+                <span>Blog Site</span>
+                <div>NodeJs/MonoDb</div>
                 <a
-                  href="https://github.com/Fatimah019/CarParkSpace/"
+                  href="https://github.com/Fatimah019/RevieApi"
                   className="g-text-col"
                 >
                   <i className="fa fa-github"></i>
                 </a>
               </div>
               <div className="text-center visit-site-link">
-                <a href="https://parkcar.netlify.app" className="t-text-col">
-                  Visit Site
+                <a
+                  href="https://documenter.getpostman.com/view/11223454/Tz5s4wUj"
+                  className="t-text-col"
+                >
+                  See Documentation
                 </a>
               </div>
               <div className="container progress-con">
-                <div className="half-complete text-center">50%</div>
+                <div className="eightyperc text-center">80%</div>
               </div>
             </div>
             <div className="proj-3">
@@ -247,6 +256,7 @@ export default class Projects extends Component {
                 <div className="complete text-center">100%</div>
               </div>
             </div>
+
             {/* end of projrcts */}
           </div>
         </div>

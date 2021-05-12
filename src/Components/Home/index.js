@@ -91,21 +91,21 @@ export default class Home extends Component {
                 <div className="text-right">
                   <i className="fa fa-folder"></i>
                 </div>
-                <span> FrontEnd/FullStack</span>
+                <span> All Projects</span>
                 <br />
                 <span className="t-text-col">
-                  See All Frontend/FullStack Projects Here
+                  See All Frontend / Backend Projects Here
                 </span>
                 <p>
                   {" "}
-                  <NavLink to="/projects/frontend" className="s-text-col">
+                  <NavLink to="/projects" className="s-text-col">
                     See Projects
                   </NavLink>
                 </p>
               </div>
             </div>
             {/* 2 */}
-            <div className="home-second-layer-l-div">
+            {/* <div className="home-second-layer-l-div">
               <div className="flex-col justify-content-center">
                 <div className="text-right">
                   <i className="fa fa-folder"></i>
@@ -122,7 +122,7 @@ export default class Home extends Component {
                   </NavLink>
                 </p>
               </div>
-            </div>
+            </div> */}
             {/* 3 */}
           </div>
           <div className="home-second-layer-r">
@@ -192,10 +192,10 @@ export default class Home extends Component {
               <div className="latest-works-l-img-con latest-works-l-inner-1">
                 <div className="latest-works-l-img">
                   <div className="latest-works-l-img-h container-fluid flex space-between align-center">
-                    <span>CarPark Booking</span>
+                    <span>Task Manager</span>
                     <div>ReactJs/Css/NodeJs</div>
                     <a
-                      href="https://github.com/Fatimah019/CarParkSpace/"
+                      href="https://github.com/Fatimah019/TaskManager"
                       className="g-text-col"
                     >
                       <i className="fa fa-github"></i>
@@ -203,7 +203,7 @@ export default class Home extends Component {
                   </div>
                   <div className="text-center visit-site-link">
                     <a
-                      href="https://parkcar.netlify.app"
+                      href="https://taskmanagerbyme.herokuapp.com/p"
                       className="t-text-col"
                     >
                       Visit Site
@@ -215,7 +215,7 @@ export default class Home extends Component {
               <div className="latest-works-l-inner-1 flex-col flex-start">
                 <p className="contact-link-proj">
                   <b>
-                    <NavLink to="/all/projects" className="s-text-col">
+                    <NavLink to="/projects" className="s-text-col">
                       ALL PROJECTS
                     </NavLink>
                   </b>

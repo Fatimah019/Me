@@ -89,7 +89,7 @@ export default class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  to="/projects/frontend"
+                  to="/projects"
                   className={this.state.active ? "active" : "inactive"}
                 >
                   Projects
@@ -98,7 +98,7 @@ export default class Header extends Component {
               <li>
                 <a
                   className="inactive"
-                  href="https://res.cloudinary.com/dycyotaya/image/upload/v1617241537/FatimahDaviesO_b86l1g.pdf"
+                  href="https://docs.google.com/document/d/16GwKlkmfU3cXcugC2iWao7ysI_90NfpnsEc22Wpxj6w/edit?usp=drivesdk"
                 >
                   CV
                 </a>
