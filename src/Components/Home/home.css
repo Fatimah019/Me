@@ -1,6 +1,5 @@
 .home-top {
   background-color: rgb(45, 45, 45);
-  position: relative;
   box-shadow: 8px 0px 15px 0px rgba(78, 77, 77, 0.8);
   padding: 10px 0px 0px 0px;
 }
@@ -166,19 +165,12 @@ skillls
   flex-direction: column;
   align-items: center;
 }
-.latest-works-l-img {
-  background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033422/WhatsApp_Image_2021-03-29_at_8.49.18_AM_5_j0iqe4.jpg");
-}
-.latest-works-r-p-2-img-1 {
-  background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1617033422/WhatsApp_Image_2021-03-29_at_8.49.18_AM_2_zmoyln.jpg");
-}
+
 .latest-works-r-p-2-img-2-h,
 .latest-works-l-img-h {
   margin-top: 10px;
 }
-.latest-works-r-p-2-img-2 {
-  background-image: url("https://res.cloudinary.com/dycyotaya/image/upload/v1605185099/jefferson-santos-9SoCnyQmkzI-unsplash_1_sodd7c.jpg");
-}
+
 .visit-site-link {
   height: 50%;
   display: flex;
@@ -197,6 +189,22 @@ skillls
 .home-footer {
   margin-top: 40px;
 }
+
+/* latest */
+.latest-works-o {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  column-gap: 5rem;
+}
+
+.latest-works-o-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
   .home-top-content-inner-r img {
     width: 70%;
@@ -286,7 +294,13 @@ skillls
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     width: 70%;
   }
+
+  /* latest */
+  .latest-works-o {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
+
 @media screen and (max-width: 600px) {
   .skills {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));

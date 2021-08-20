@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import "../../cssfiles/projects.css";
-import { NavLink } from "react-router-dom";
+import ProjectCard from "../UI/ProjectCard";
+import "./projects.css";
+// import { NavLink } from "react-router-dom";
 
 export default class Projects extends Component {
   constructor(props) {
@@ -19,244 +20,79 @@ export default class Projects extends Component {
       <div>
         <div className="home-top proj-top">
           <Header />
-          {/* nav links to all, frontend, and backend projects each */}
-          {/* <div className="projects-header">
-            <nav>
-              <NavLink
-                to="/projects/frontend"
-                exact
-                className={this.state.active ? "active" : "inactive"}
-              >
-                FrontEnd
-              </NavLink>
-              <NavLink
-                to="/projects/backend"
-                className={this.state.active ? "active" : "inactive"}
-              >
-                Backend
-              </NavLink>
-            </nav>
-          </div> */}
           {/* list of projects */}
           <div className="project-list">
-            <div className="proj-1">
-              <div className="container-fluid flex align-center space-between">
-                <span>Find A Seller</span>
-                <div>ReactJs/Css/NodeJs</div>
-                <a
-                  href="https://github.com/Fatimah019/FindASeller"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <video autoplay loop>
-                  <source
-                    src="https://res.cloudinary.com/dycyotaya/video/upload/v1618816394/Untitled_8_1080p_1_nr0qes.3gp"
-                    type="video/mp4"
-                  ></source>
-                </video>
-                <a
-                  href="https://findaseller.herokuapp.com/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="eightyperc text-center">80%</div>
-              </div>
-            </div>
-            <div className="proj-b-2">
-              <div className="container-fluid flex align-center space-between">
-                <span>Blog Site</span>
-                <div>NodeJs/MonoDb</div>
-                <a
-                  href="https://github.com/Fatimah019/RevieApi"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://documenter.getpostman.com/view/11223454/Tz5s4wUj"
-                  className="t-text-col"
-                >
-                  See Documentation
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="eightyperc text-center">80%</div>
-              </div>
-            </div>
-            <div className="proj-3">
-              <div className="container-fluid flex align-center space-between">
-                <span>Dev Portfolio</span>
-                <div>ReactJs/Css</div>
-                <a
-                  href="https://github.com/Fatimah019/FatimahDaviesO"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://d-porfolio.herokuapp.com/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-            <div className="proj-4">
-              <div className="container-fluid flex align-center space-between">
-                <span>Image Search</span>
-                <div>VueJs/SASS</div>
+            <ProjectCard
+              name="MePlayList"
+              plang="ReactJs, CSS, NodeJs"
+              linkname=" Visit Site"
+              linkurl="https://app.meplaylist.com/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393291/meplaylist_nf8sdy.png"
+            />
+            <ProjectCard
+              name="Startup Lagos"
+              plang="ReactJs, CSS"
+              linkname="Visit Site"
+              linkurl="https://startuplagos.net/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393280/startup_rc6paa.png"
+            />
+            <ProjectCard
+              name="Github Repo Clone"
+              plang="Html, CSS, JS"
+              linkname=" Visit Site"
+              linkurl="http://buycoinstest1.netlify.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393267/githubrepo_sjhg5t.png"
+            />
+            <ProjectCard
+              name="Task Tracker"
+              plang="ReactJs, NodeJs"
+              linkname=" Visit Site"
+              linkurl="https://taskmanagerbyme.herokuapp.com"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/tasktracker_no0h1m.png"
+            />
+            <ProjectCard
+              name="Image Search"
+              plang="VueJs/SASS"
+              linkname=" Visit Site"
+              linkurl="https://getimage.netlify.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393272/images_gw6fht.png"
+            />
+            <ProjectCard
+              name="FormPlus Templates"
+              plang="ReactJs, CSS"
+              linkname=" Visit Site"
+              linkurl="https://formpluss.netlify.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png"
+            />
+            <ProjectCard
+              name="COVID CASES"
+              plang="ReactJs, CSS"
+              linkname=" Visit Site"
+              linkurl="https://covidcasesbyfatimah.netlify.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393270/covid_rzrxdo.png"
+            />
 
-                <a
-                  href="https://github.com/Fatimah019/ImagesSearch"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a href="https://getimage.netlify.app/" className="t-text-col">
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-            <div className="proj-5">
-              <div className="container-fluid flex align-center space-between">
-                <span>Quiz App</span>
-                <div>HTML/Css/Js</div>
-                <a
-                  href="https://github.com/Fatimah019/quiz-app"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://fatimah019.github.io/quiz-app/quiz"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-            <div className="proj-6">
-              <div className="container-fluid flex align-center space-between">
-                <span>ToDo App</span>
-                <div>ReactJs, Nodejs and Css</div>
-                <a
-                  href="https://github.com/Fatimah019/ToDoApp"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://todoappbyme.herokuapp.com/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-
-            <div className="proj-4">
-              <div className="container-fluid flex align-center space-between">
-                <span>Covid Cases</span>
-                <div>ReactJs, CSS</div>
-
-                <a
-                  href="https://github.com/Fatimah019/covidcasesN"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://covidcasesbyfatimah.netlify.app/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-
-            <div className="proj-4">
-              <div className="container-fluid flex align-center space-between">
-                <span>Dev Portfolio</span>
-                <div>ReactJs, CSS</div>
-
-                <a
-                  href="https://github.com/Fatimah019/NafeesahJimoh"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://nofeesahjimoh.herokuapp.com/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-
-            <div className="proj-4">
-              <div className="container-fluid flex align-center space-between">
-                <span>Task Manager</span>
-                <div>ReactJs, NodeJs, CSS</div>
-
-                <a
-                  href="https://github.com/Fatimah019/TaskManager"
-                  className="g-text-col"
-                >
-                  <i className="fa fa-github"></i>
-                </a>
-              </div>
-              <div className="text-center visit-site-link">
-                <a
-                  href="https://taskmanagerbyme.herokuapp.com/"
-                  className="t-text-col"
-                >
-                  Visit Site
-                </a>
-              </div>
-              <div className="container progress-con">
-                <div className="complete text-center">100%</div>
-              </div>
-            </div>
-
+            <ProjectCard
+              name="Quiz App"
+              plang="Html, CSS, Js"
+              linkname=" Visit Site"
+              linkurl="https://fatimah019.github.io/quiz-app/quiz"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393272/quiz_nimejg.png"
+            />
+            <ProjectCard
+              name="Dev Portfolio"
+              plang="ReactJs, CSS"
+              linkname=" Visit Site"
+              linkurl="https://d-porfolio.herokuapp.com/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
+            />
+            <ProjectCard
+              name="Google Docs Clone"
+              plang="ReactJs, CSS"
+              linkname=" Visit Site"
+              linkurl="https://d-porfolio.herokuapp.com/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
+            />
             {/* end of projrcts */}
           </div>
         </div>
