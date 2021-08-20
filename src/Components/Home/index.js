@@ -36,8 +36,8 @@ const Home = () => {
                   </pre>
                 </div>
                 <span className="t-text-col">
-                  Two years experience of building beautiful and amazing
-                  websites.
+                  Years experience of building beautiful and amazing websites
+                  and web applications.
                 </span>
                 <br />
                 <a
@@ -168,6 +168,10 @@ const Home = () => {
         <div>
           {" "}
           <p>JavaScript</p>
+        </div>
+        <div>
+          {" "}
+          <p>TypeScript</p>
         </div>
         <div>
           {" "}
