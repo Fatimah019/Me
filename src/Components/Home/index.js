@@ -143,6 +143,9 @@ const Home = () => {
           <p>Reactjs</p>
         </div>
         <div>
+          <p>Next.Js</p>
+        </div>
+        <div>
           <p>VueJs</p>
         </div>
         <div>
@@ -177,6 +180,8 @@ const Home = () => {
           {" "}
           <p>SASS</p>
         </div>
+        <div><p>Material-Ui</p></div>
+        <div><p>Tailwind Css</p></div>
       </div>
 
       {/* latest work */}
@@ -192,7 +197,7 @@ const Home = () => {
           </div>
           <ProjectCard
             name="StartupLagos"
-            plang="ReactJs"
+            plang="ReactJs, MaterialUi, Redux"
             linkname="Visit Site"
             linkurl="https://www.startuplagos.net/"
             imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393280/startup_rc6paa.png"
@@ -215,15 +220,15 @@ const Home = () => {
         </div>
         <div>
           <ProjectCard
-            name="FindASeller"
-            plang="ReactJs, CSS, NodeJs"
+            name="Google Docs Clone"
+            plang="Next.Js, TailwindCss, Firebase"
             linkname=" Visit Site"
-            linkurl="https://findaseller.herokuapp.com/"
-            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393284/findaseller_sckgyb.png"
+            linkurl="https://googledocs-clone-davies.vercel.app/"
+            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png"
           />
           <ProjectCard
             name="FormPlus Templates"
-            plang="ReactJs, CSS"
+            plang="ReactJs, CSS, Redux"
             linkname="Visit Site"
             linkurl="https://formpluss.netlify.app/"
             imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png"

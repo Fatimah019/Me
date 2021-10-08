@@ -1,0 +1,142 @@
+.book_container {
+  background-color: rgb(182, 177, 177);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 5px 10px 40px 5px rgb(47, 47, 48);
+  height: 85vh;
+  width: 85vw;
+}
+.left_page,
+.right_page {
+  display: flex;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+.left_page {
+  border-right: 2px solid rgb(105, 105, 105);
+  box-shadow: 1px 0px 4px 0px rgb(47, 47, 48);
+  justify-content: flex-start;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+.right_page {
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  /* animation: linear;
+  animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation: linear;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1s; */
+}
+.right_page {
+  animation: slide 0.8s;
+}
+.door {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  transform: rotate(40deg);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.left_page_image {
+  width: 8rem;
+  height: 8rem;
+}
+.right_page_image_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 5px;
+}
+.right_page_image {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* keyframes */
+/* @keyframes slide {
+  0% {
+    right: 0;
+  }
+  100% {
+    left: 100%;
+  }
+} */
+
+@keyframes slide {
+  0% {
+    margin-right: -50%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+/* 
+@-webkit-keyframes slide {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .book_container {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .left_page,
+  .right_page {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    overflow: hidden;
+    width: 60vh;
+    height: 40vh;
+  }
+  .left_page {
+    border-right: none;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    box-shadow: 0px 2px 3px 0px rgb(47, 47, 48);
+    justify-content: flex-start;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+  }
+  .right_page {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5rem;
+    overflow-y: auto;
+  }
+}

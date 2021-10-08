@@ -40,7 +40,7 @@ export default class Projects extends Component {
               name="Github Repo Clone"
               plang="Html, CSS, JS"
               linkname=" Visit Site"
-              linkurl="http://buycoinstest1.netlify.app/"
+              linkurl="https://buycoinstest1.netlify.app/"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393267/githubrepo_sjhg5t.png"
             />
             <ProjectCard
@@ -79,18 +79,18 @@ export default class Projects extends Component {
               linkurl="https://fatimah019.github.io/quiz-app/quiz"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393272/quiz_nimejg.png"
             />
-            <ProjectCard
+            {/* <ProjectCard
               name="Dev Portfolio"
               plang="ReactJs, CSS"
               linkname=" Visit Site"
               linkurl="https://d-porfolio.herokuapp.com/"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
-            />
+            /> */}
             <ProjectCard
               name="Google Docs Clone"
               plang="ReactJs, CSS"
               linkname=" Visit Site"
-              linkurl="https://d-porfolio.herokuapp.com/"
+              linkurl="https://googledocs-clone-davies.vercel.app/"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
             />
             {/* end of projrcts */}

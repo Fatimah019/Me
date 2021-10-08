@@ -1,0 +1,12 @@
+.project_container {
+  background-color: rgb(179, 182, 179);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book_home {
+  /* background-color: blue; */
+}
