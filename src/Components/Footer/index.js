@@ -16,6 +16,9 @@ const Footer = () => {
   const [active] = useState(false);
 
   const email = "daviesfatimah97@gmail.com";
+
+  // let getYear = new Date()
+  // getYear.getFullYear().toLocaleString()
   return (
     <div className="footer">
       <footer>
@@ -34,11 +37,12 @@ const Footer = () => {
             </p>
           </div>
           <div>
+        
             <span>
               {" "}
               <b>Fatimah</b>Davies
             </span>
-            <pre className="t-text-col">2020 all rights reserved</pre>
+            <pre className="t-text-col">2021 all rights reserved</pre>
           </div>
         </div>
         <div className="flex-col footer-r">

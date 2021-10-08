@@ -30,13 +30,13 @@ const Home = () => {
                 </div>
 
                 <div>
-                  <p className="home-top-content-inner-l-1-h">Web Developer</p>
+                  <p className="home-top-content-inner-l-1-h">FrontEnd Engineer</p>
                   <pre>
                     <b>With</b>
                   </pre>
                 </div>
                 <span className="t-text-col">
-                  Years experience of building beautiful and amazing websites
+                  Years of experience, building functional and beautiful and amazing websites
                   and web applications.
                 </span>
                 <br />
@@ -192,7 +192,7 @@ const Home = () => {
               <b>Latest Works</b>
             </p>
             <p className="t-text-col">
-              Recent projects i have been working on.
+              Recent projects I have built.
             </p>
           </div>
           <ProjectCard
@@ -211,7 +211,7 @@ const Home = () => {
               </b>
             </p>
             <span className="t-text-col">
-              if you have a reason to work with me then{" "}
+              If there is a reason to work with me then{" "},
               <a href="tel:07088780115" className="s-text-col">
                 Let's Talk
               </a>

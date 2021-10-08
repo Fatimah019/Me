@@ -44,6 +44,28 @@ export default class Projects extends Component {
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393267/githubrepo_sjhg5t.png"
             />
             <ProjectCard
+              name="Google Docs Clone"
+              plang="NextJs, TailwindCss, Firebase"
+              linkname=" Visit Site"
+              linkurl="https://googledocs-clone-davies.vercel.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png"
+            />
+
+            <ProjectCard
+              name="Quiz App"
+              plang="Html, CSS, Js"
+              linkname=" Visit Site"
+              linkurl="https://fatimah019.github.io/quiz-app/quiz"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393272/quiz_nimejg.png"
+            />
+            <ProjectCard
+              name="COVID CASES"
+              plang="ReactJs, CSS"
+              linkname=" Visit Site"
+              linkurl="https://covidcasesbyfatimah.netlify.app/"
+              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393270/covid_rzrxdo.png"
+            />
+            <ProjectCard
               name="Task Tracker"
               plang="ReactJs, NodeJs"
               linkname=" Visit Site"
@@ -64,21 +86,7 @@ export default class Projects extends Component {
               linkurl="https://formpluss.netlify.app/"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png"
             />
-            <ProjectCard
-              name="COVID CASES"
-              plang="ReactJs, CSS"
-              linkname=" Visit Site"
-              linkurl="https://covidcasesbyfatimah.netlify.app/"
-              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393270/covid_rzrxdo.png"
-            />
-
-            <ProjectCard
-              name="Quiz App"
-              plang="Html, CSS, Js"
-              linkname=" Visit Site"
-              linkurl="https://fatimah019.github.io/quiz-app/quiz"
-              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393272/quiz_nimejg.png"
-            />
+       
             {/* <ProjectCard
               name="Dev Portfolio"
               plang="ReactJs, CSS"
@@ -86,13 +94,7 @@ export default class Projects extends Component {
               linkurl="https://d-porfolio.herokuapp.com/"
               imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
             /> */}
-            <ProjectCard
-              name="Google Docs Clone"
-              plang="ReactJs, CSS"
-              linkname=" Visit Site"
-              linkurl="https://googledocs-clone-davies.vercel.app/"
-              imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png"
-            />
+        
             {/* end of projrcts */}
           </div>
         </div>

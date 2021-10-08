@@ -99,8 +99,8 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/codewithfatimah">
-              <i className="fa fa-twitter"> Twitter</i>
+            <a href="https://twitter.com/fatimahdavies">
+              <i className="fa fa-linkedin">Linkedin</i>
             </a>
           </li>
           <li>
