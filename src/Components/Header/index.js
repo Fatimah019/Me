@@ -26,7 +26,7 @@ const Header = () => {
     setShowopenicon(true);
   };
 
-  const changeHeaderOnScroll = (e) => {
+  const changeHeaderOnScroll = () => {
     if (window.scrollY > 80) {
       setHeadStyle({
         backgroundColor: "rgba(110, 110, 110, 0.7)",

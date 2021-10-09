@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import "./home.css";
+import { skills } from "../../data";
 
 import ProjectCard from "../UI/ProjectCard";
 
@@ -36,7 +37,7 @@ const Home = () => {
                   </pre>
                 </div>
                 <span className="t-text-col">
-                  Years of experience, building functional and beautiful and amazing websites
+                  Years of experience, building functional, beautiful and amazing websites
                   and web applications.
                 </span>
                 <br />
@@ -102,25 +103,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-          {/* 2 */}
-          {/* <div className="home-second-layer-l-div">
-          <div className="flex-col justify-content-center">
-            <div className="text-right">
-              <i className="fa fa-folder"></i>
-            </div>
-            <span>BackEnd</span>
-            <br />
-            <span className="t-text-col">
-              See All Backend Projects Here
-            </span>
-            <p>
-              {" "}
-              <NavLink to="/projects/backend" className="s-text-col">
-                See Projects
-              </NavLink>
-            </p>
-          </div>
-        </div> */}
           {/* 3 */}
         </div>
         <div className="home-second-layer-r">
@@ -139,49 +121,9 @@ const Home = () => {
 
       {/* skills */}
       <div className="skills">
-        <div>
-          <p>Reactjs</p>
-        </div>
-        <div>
-          <p>Next.Js</p>
-        </div>
-        <div>
-          <p>VueJs</p>
-        </div>
-        <div>
-          {" "}
-          <p>Git</p>
-        </div>
-        <div>
-          <p>MongoDb</p>
-        </div>
-        <div>
-          <p>NodeJs</p>
-        </div>
-        <div>
-          <p>Redux</p>
-        </div>
-        <div>
-          {" "}
-          <p>Html</p>
-        </div>
-        <div>
-          <p>Css</p>
-        </div>
-        <div>
-          {" "}
-          <p>JavaScript</p>
-        </div>
-        <div>
-          {" "}
-          <p>TypeScript</p>
-        </div>
-        <div>
-          {" "}
-          <p>SASS</p>
-        </div>
-        <div><p>Material-Ui</p></div>
-        <div><p>Tailwind Css</p></div>
+        {skills.map((skill, index)=>(
+          <p key={index}>{skill.name}</p>
+        ))}
       </div>
 
       {/* latest work */}
@@ -196,11 +138,13 @@ const Home = () => {
             </p>
           </div>
           <ProjectCard
-            name="StartupLagos"
+            name="Startup Lagos"
             plang="ReactJs, MaterialUi, Redux"
-            linkname="Visit Site"
-            linkurl="https://www.startuplagos.net/"
+            linkName="Visit Site"
+            linkUrl="https://www.startuplagos.net/"
             imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393280/startup_rc6paa.png"
+            title="Startup Lagos"
+            description="Startup Lagos targets being the largest tech ecosystem, to offer retail and institutional investors the huge opportunities of tapping into the vast potential of early-stage tech-driven startup initiatives to blossom into regional and continental scale solutions to Africa’s diverse challenges"
           />
           <div className="latest-works-l-inner-1 flex-col flex-start">
             <p className="contact-link-proj">
@@ -222,16 +166,20 @@ const Home = () => {
           <ProjectCard
             name="Google Docs Clone"
             plang="Next.Js, TailwindCss, Firebase"
-            linkname=" Visit Site"
-            linkurl="https://googledocs-clone-davies.vercel.app/"
+            linkName=" Visit Site"
+            linkUrl="https://googledocs-clone-davies.vercel.app/"
             imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png"
+            title="Google Docs Clone"
+            description="Google Docs Clone is aimed at mimicking some of the features of Google Docs such as; Login in to your google docs with your google account, creating a new document, saving and accessing documents created"
           />
           <ProjectCard
-            name="FormPlus Templates"
-            plang="ReactJs, CSS, Redux"
-            linkname="Visit Site"
-            linkurl="https://formpluss.netlify.app/"
-            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png"
+            name="Github Repo Clone"
+            plang="Html, CSS, JS, GraphQl"
+            linkName="Visit Site"
+            linkUrl="https://buycoinstest1.netlify.app/"
+            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393267/githubrepo_sjhg5t.png"
+            title="Github Repo Clone"
+            description="Github Repo Clone aims at demonstrating the features on the github repo. A field where you can put your gthub username appears and when you procees, you get to see the list of repositories you have created as a user. "
           />
         </div>
       </div>
