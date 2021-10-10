@@ -80,7 +80,7 @@ export const projectData = [
     linkName: "Visit Site",
     linkUrl: "https://slack-clone-davies.vercel.app/",
     imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png",
+      "https://res.cloudinary.com/dycyotaya/image/upload/v1633865945/Screenshot_20211010-123641_1_rmzcof.jpg",
     title: "Slack Web App Clone",
     description:
       "Slack Web App Clone is aimed at mimicking some of the features of Slack such as; Login in to your google docs with your google account, creating channels, hab=ving and enjoying conversations in the channels created",
