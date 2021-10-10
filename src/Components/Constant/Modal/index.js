@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { styled, Box } from '@mui/system';
-import ModalUnstyled from '@mui/core/ModalUnstyled';
+import * as React from "react";
+import { styled, Box } from "@mui/system";
+import ModalUnstyled from "@mui/core/ModalUnstyled";
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -14,7 +14,7 @@ const StyledModal = styled(ModalUnstyled)`
   justify-content: center;
 `;
 
-const Backdrop = styled('div')`
+const Backdrop = styled("div")`
   z-index: -1;
   position: fixed;
   right: 0;
@@ -27,14 +27,21 @@ const Backdrop = styled('div')`
 
 const style = {
   width: 400,
-  bgcolor: 'rgb(37, 37, 37)',
-  border: '2px solid rgb(37, 37, 37)',
+  bgcolor: "rgb(37, 37, 37)",
+  border: "2px solid rgb(37, 37, 37)",
   p: 2,
   px: 4,
   pb: 3,
 };
 
-export default function Modal({open, close, title, description, linkUrl, linkName}) {
+export default function Modal({
+  open,
+  close,
+  title,
+  description,
+  linkUrl,
+  linkName,
+}) {
   return (
     <div>
       <StyledModal
@@ -49,18 +56,19 @@ export default function Modal({open, close, title, description, linkUrl, linkNam
           <p id="unstyled-modal-description">{description}</p>
           <div
             style={{
-                textAlign:"right"
+              textAlign: "right",
             }}
           >
-            <a href={linkUrl} 
+            <a
+              href={linkUrl}
               style={{
-                color:"rgb(255, 255, 255)",
-                cursor: "pointer"
+                color: "rgb(255, 255, 255)",
+                cursor: "pointer",
               }}
             >
               {linkName}
             </a>
-            </div>
+          </div>
         </Box>
       </StyledModal>
     </div>

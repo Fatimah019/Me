@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import "./card.css";
 import Modal from "../../Constant/Modal";
 
-const ProjectCard = ({ 
-  name, 
-  plang, 
-  imageurl, 
-  title, 
-  description, 
-  linkUrl, 
-  linkName 
+const ProjectCard = ({
+  name,
+  plang,
+  imageurl,
+  title,
+  description,
+  linkUrl,
+  linkName,
 }) => {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
 
   return (
     <div className="project_card">
-      <Modal 
-        open={modal} 
-        close={()=> setModal(false)} 
-        title={title} 
-        description={description} 
+      <Modal
+        open={modal}
+        close={() => setModal(false)}
+        title={title}
+        description={description}
         linkUrl={linkUrl}
         linkName={linkName}
       />
@@ -30,15 +30,9 @@ const ProjectCard = ({
       </div>
       {/* card body */}
       <div className="project_card_body">
-        <button 
-          className="project_card_link"
-          onClick={()=> setModal(true)}
-        >
+        <button className="project_card_link" onClick={() => setModal(true)}>
           See More
         </button>
-        {/* <a href={linkurl} className="project_card_link">
-          {linkname}
-        </a> */}
         <img src={imageurl} alt="img" className="project_card_image" />
       </div>
     </div>

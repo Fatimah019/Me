@@ -37,7 +37,6 @@ const Footer = () => {
             </p>
           </div>
           <div>
-        
             <span>
               {" "}
               <b>Fatimah</b>Davies

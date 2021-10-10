@@ -5,12 +5,12 @@ import Projects from "../Projects";
 
 function Routes() {
   return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
-        </Switch>
-      </Router>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
+    </Router>
   );
 }
 
