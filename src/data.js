@@ -78,7 +78,7 @@ export const projectData = [
     name: "Slack Web App Clone",
     plang: "ReactJs, Redux, Firebase",
     linkName: "Visit Site",
-    linkUrl: "https://googledocs-clone-davies.vercel.app/",
+    linkUrl: "https://slack-clone-davies.vercel.app/",
     imageurl:
       "https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png",
     title: "Slack Web App Clone",
