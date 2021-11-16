@@ -10,6 +10,9 @@ const ProjectCard = ({
   description,
   linkUrl,
   linkName,
+  screenshots,
+  isMobileVersion,
+  googlePlayUrl,
 }) => {
   const [modal, setModal] = useState(false);
 
@@ -22,6 +25,9 @@ const ProjectCard = ({
         description={description}
         linkUrl={linkUrl}
         linkName={linkName}
+        screenshots={screenshots && screenshots}
+        isMobileVersion={isMobileVersion && isMobileVersion}
+        googlePlayUrl={googlePlayUrl && googlePlayUrl}
       />
       {/* card header */}
       <div className="flex space-between project_card_header">

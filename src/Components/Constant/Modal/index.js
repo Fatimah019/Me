@@ -4,7 +4,7 @@ import ModalUnstyled from "@mui/core/ModalUnstyled";
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
-  z-index: 1300;
+  z-index: 999999999999999999999999999999999999999999999999999;
   right: 0;
   bottom: 0;
   top: 0;
@@ -12,6 +12,7 @@ const StyledModal = styled(ModalUnstyled)`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 `;
 
 const Backdrop = styled("div")`
@@ -41,6 +42,9 @@ export default function Modal({
   description,
   linkUrl,
   linkName,
+  screenshots,
+  isMobileVersion,
+  googlePlayUrl,
 }) {
   return (
     <div>
@@ -54,11 +58,42 @@ export default function Modal({
         <Box sx={style}>
           <h3 id="unstyled-modal-title">{title}</h3>
           <p id="unstyled-modal-description">{description}</p>
+          {screenshots && (
+            <div
+              style={{ display: "flex", flexWrap: "wrap", margin: "1rem 0rem" }}
+            >
+              {screenshots.map((shot) => (
+                <img
+                  src={shot}
+                  alt="screenshots"
+                  style={{
+                    width: "48%",
+                    margin: "0.5rem auto",
+                    // objectFit: "contain",
+                  }}
+                />
+              ))}
+            </div>
+          )}
           <div
             style={{
+              display: "flex",
+              alignItems: "center",
               textAlign: "right",
             }}
           >
+            {isMobileVersion && (
+              <a
+                href={googlePlayUrl && googlePlayUrl}
+                style={{
+                  color: "rgb(255, 255, 255)",
+                  cursor: "pointer",
+                  marginRight: "1rem",
+                }}
+              >
+                <img src={isMobileVersion} alt="googleplay" />
+              </a>
+            )}
             <a
               href={linkUrl}
               style={{

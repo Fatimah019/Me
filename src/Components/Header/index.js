@@ -82,7 +82,7 @@ const Header = () => {
           <li>
             <a
               className="inactive"
-              href="https://docs.google.com/document/d/16GwKlkmfU3cXcugC2iWao7ysI_90NfpnsEc22Wpxj6w/edit?usp=drivesdk"
+              href="https://docs.google.com/document/d/16GwKlkmfU3cXcugC2iWao7ysI_90NfpnsEc22Wpxj6w/edit?usp=sharing"
             >
               CV
             </a>

@@ -31,14 +31,16 @@ const Home = () => {
                 </div>
 
                 <div>
-                  <p className="home-top-content-inner-l-1-h">FrontEnd Engineer</p>
+                  <p className="home-top-content-inner-l-1-h">
+                    FrontEnd Engineer
+                  </p>
                   <pre>
                     <b>With</b>
                   </pre>
                 </div>
                 <span className="t-text-col">
-                  Years of experience, building functional, beautiful and amazing websites
-                  and web applications.
+                  Years of experience, building functional, beautiful and
+                  amazing websites and web applications.
                 </span>
                 <br />
                 <a
@@ -50,7 +52,8 @@ const Home = () => {
               </div>
               <div className="home-top-content-inner-l-2">
                 <div className="flex align-center home-top-content-inner-l-2-n">
-                  <p>7</p>
+                  <p>N</p>
+                  <sup>th</sup>
                   <div>
                     <span className="t-text-col">Personal</span>
                     <br />
@@ -58,7 +61,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex align-center home-top-content-inner-l-2-n">
-                  <p>2</p>
+                  <p>N</p> <sup>th</sup>
                   <div>
                     <span className="t-text-col">Featured</span>
                     <br />
@@ -121,7 +124,7 @@ const Home = () => {
 
       {/* skills */}
       <div className="skills">
-        {skills.map((skill, index)=>(
+        {skills.map((skill, index) => (
           <p key={index}>{skill.name}</p>
         ))}
       </div>
@@ -133,9 +136,7 @@ const Home = () => {
             <p>
               <b>Latest Works</b>
             </p>
-            <p className="t-text-col">
-              Recent projects I have built.
-            </p>
+            <p className="t-text-col">Recent projects I have built.</p>
           </div>
           <ProjectCard
             name="Startup Lagos"
@@ -145,6 +146,11 @@ const Home = () => {
             imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393280/startup_rc6paa.png"
             title="Startup Lagos"
             description="Startup Lagos targets being the largest tech ecosystem, to offer retail and institutional investors the huge opportunities of tapping into the vast potential of early-stage tech-driven startup initiatives to blossom into regional and continental scale solutions to Africa’s diverse challenges"
+            screenshots={[
+              "/assets/images/startup-profile.png",
+              "/assets/images/startup-investor.png",
+              "/assets/images/startup-payment.png",
+            ]}
           />
           <div className="latest-works-l-inner-1 flex-col flex-start">
             <p className="contact-link-proj">
@@ -155,7 +161,7 @@ const Home = () => {
               </b>
             </p>
             <span className="t-text-col">
-              If there is a reason to work with me then{" "},
+              If there is a reason to work with me then ,
               <a href="tel:07088780115" className="s-text-col">
                 Let's Talk
               </a>
@@ -164,22 +170,36 @@ const Home = () => {
         </div>
         <div>
           <ProjectCard
-            name="Google Docs Clone"
-            plang="Next.Js, TailwindCss, Firebase"
-            linkName=" Visit Site"
-            linkUrl="https://googledocs-clone-davies.vercel.app/"
-            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png"
-            title="Google Docs Clone"
-            description="Google Docs Clone is aimed at mimicking some of the features of Google Docs such as; Login in to your google docs with your google account, creating a new document, saving and accessing documents created"
+            name="Wellness Plus"
+            plang="ReactJs, Redux, Material-Ui"
+            linkName="Visit Site"
+            linkUrl="https://wellnessplus-admin.herokuapp.com/"
+            imageurl="/assets/images/wellness-login.png"
+            title="Wellness Plus"
+            description="Wellness Plus is a health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses."
+            screenshots={[
+              "/assets/images/wellness-home.png",
+              "/assets/images/wellness-hmo-dashboard.png",
+              "/assets/images/wellness-hmo-enrollees.png",
+              "/assets/images/wellness-plus-dental.png",
+            ]}
+            googlePlayUrl="https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp"
+            isMobileVersion="/assets/images/GooglePlayStore.png"
           />
           <ProjectCard
-            name="Github Repo Clone"
-            plang="Html, CSS, JS, GraphQl"
+            name="MePlayList"
+            plang="ReactJs, CSS, NodeJs"
             linkName="Visit Site"
-            linkUrl="https://buycoinstest1.netlify.app/"
-            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393267/githubrepo_sjhg5t.png"
-            title="Github Repo Clone"
-            description="Github Repo Clone aims at demonstrating the features on the github repo. A field where you can put your gthub username appears and when you procees, you get to see the list of repositories you have created as a user. "
+            linkUrl="https://app.meplaylist.com/"
+            imageurl="https://res.cloudinary.com/dycyotaya/image/upload/v1629393291/meplaylist_nf8sdy.png"
+            title="Meplaylist"
+            description="MePlaylist is a digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds"
+            screenshots={[
+              "/assets/images/meplaylist-one.png",
+              "/assets/images/meplaylist-two.png",
+              "/assets/images/meplaylist-three.png",
+              "/assets/images/meplaylist-five.png",
+            ]}
           />
         </div>
       </div>

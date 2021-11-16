@@ -26,6 +26,9 @@ const Projects = () => {
               imageurl={project.imageurl}
               title={project.title}
               description={project.description}
+              screenshots={project.screenshots}
+              isMobileVersion={project.mobileVersion}
+              googlePlayUrl={project.googlePlayUrl}
             />
           ))}
 

@@ -9,6 +9,9 @@ export const skills = [
     name: "JavaScript",
   },
   {
+    name: "TypeScript",
+  },
+  {
     name: "ReactJs",
   },
   {
@@ -36,11 +39,51 @@ export const skills = [
     name: "Material-Ui",
   },
   {
+    name: "Styled-Components",
+  },
+  {
     name: "BootStrap",
+  },
+  {
+    name: "Jira",
   },
 ];
 
 export const projectData = [
+  {
+    name: "Wellness Plus",
+    plang: "ReactJs, Redux, Material-Ui",
+    linkName: "Visit Site",
+    linkUrl: "https://wellnessplus-admin.herokuapp.com/",
+    imageurl: "/assets/images/wellness-login.png",
+    title: "Wellness Plus",
+    description:
+      "Wellness Plus is a health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses.",
+    screenshots: [
+      "/assets/images/wellness-home.png",
+      "/assets/images/wellness-hmo-dashboard.png",
+      "/assets/images/wellness-hmo-enrollees.png",
+      "/assets/images/wellness-plus-dental.png",
+    ],
+    googlePlayUrl:
+      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
+    mobileVersion: "/assets/images/GooglePlayStore.png",
+  },
+  {
+    name: "Weather App",
+    plang: "TypeScript, ReactJs, Redux, Styled-Components",
+    linkName: "Visit Site",
+    linkUrl: "http://weatherapp-d.herokuapp.com/",
+    imageurl: "/assets/images/weatherapphome.png",
+    title: "Weather App",
+    description:
+      "My Weather App is a web application that displays top cities in the world and their weather information. Gives room for adding a city's weather as a favourite and you can search for a desired city or country's weather information.",
+    screenshots: [
+      "/assets/images/weatherappsearch.png",
+      "/assets/images/weatherapp-notes.png",
+      "/assets/images/weatherapp-favorite.png",
+    ],
+  },
   {
     name: "MePlayList",
     plang: "ReactJs, CSS, NodeJs",
@@ -51,6 +94,12 @@ export const projectData = [
     title: "Meplaylist",
     description:
       "MePlaylist is a digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds",
+    screenshots: [
+      "/assets/images/meplaylist-one.png",
+      "/assets/images/meplaylist-two.png",
+      "/assets/images/meplaylist-three.png",
+      "/assets/images/meplaylist-five.png",
+    ],
   },
   {
     name: "Startup Lagos",
@@ -62,6 +111,55 @@ export const projectData = [
     title: "Startup Lagos",
     description:
       "Startup Lagos targets being the largest tech ecosystem, to offer retail and institutional investors the huge opportunities of tapping into the vast potential of early-stage tech-driven startup initiatives to blossom into regional and continental scale solutions to Africa’s diverse challenges",
+    screenshots: [
+      "/assets/images/startup-profile.png",
+      "/assets/images/startup-investor.png",
+      "/assets/images/startup-payment.png",
+    ],
+  },
+  {
+    name: "Portfolio",
+    plang: "ReactJs, CSS, Material-UI",
+    linkName: "Visit Site",
+    linkUrl: "https://akintayo-shola.vercel.app/",
+    imageurl: "/assets/images/shola.png",
+    title: "Portfolio",
+    description:
+      "This is a website solely meant for a UI/UX Designer to showcase past and present projects",
+    screenshots: ["/assets/images/shola.png", "/assets/images/shola-two.png"],
+  },
+
+  {
+    name: "Slack Web App Clone",
+    plang: "ReactJs, Redux, Firebase",
+    linkName: "Visit Site",
+    linkUrl: "https://slack-clone-davies.vercel.app/",
+    imageurl: "/assets/images/slack-one.png",
+    title: "Slack Web App Clone",
+    description:
+      "Slack Web App Clone is aimed at mimicking some of the features of Slack such as; Login in to your google docs with your google account, creating channels, hab=ving and enjoying conversations in the channels created",
+    screenshots: [
+      "/assets/images/slack-one.png",
+      "/assets/images/slack-two.png",
+      "/assets/images/slack-three.png",
+    ],
+  },
+
+  {
+    name: "Google Docs Clone",
+    plang: "NextJs, TailwindCss, Firebase",
+    linkName: "Visit Site",
+    linkUrl: "https://googledocs-clone-davies.vercel.app/",
+    imageurl:
+      "https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png",
+    title: "Google Docs Clone",
+    description:
+      "Google Docs Clone is aimed at mimicking some of the features of Google Docs such as; Login in to your google docs with your google account, creating a new document, saving and accessing documents created",
+    screenshots: [
+      "/assets/images/googledocs-one.png",
+      "/assets/images/googledocs-two.png",
+      "/assets/images/googledocs-three.png",
+    ],
   },
   {
     name: "Github Repo Clone",
@@ -75,28 +173,6 @@ export const projectData = [
       "Github Repo Clone aims at demonstrating the features on the github repo. A field where you can put your gthub username appears and when you procees, you get to see the list of repositories you have created as a user. ",
   },
   {
-    name: "Slack Web App Clone",
-    plang: "ReactJs, Redux, Firebase",
-    linkName: "Visit Site",
-    linkUrl: "https://googledocs-clone-davies.vercel.app/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png",
-    title: "Slack Web App Clone",
-    description:
-      "Slack Web App Clone is aimed at mimicking some of the features of Slack such as; Login in to your google docs with your google account, creating channels, hab=ving and enjoying conversations in the channels created",
-  },
-  {
-    name: "Google Docs Clone",
-    plang: "NextJs, TailwindCss, Firebase",
-    linkName: "Visit Site",
-    linkUrl: "https://googledocs-clone-davies.vercel.app/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1633696440/googledocsscreenshot_ff9ath.png",
-    title: "Google Docs Clone",
-    description:
-      "Google Docs Clone is aimed at mimicking some of the features of Google Docs such as; Login in to your google docs with your google account, creating a new document, saving and accessing documents created",
-  },
-  {
     name: "Quiz App",
     plang: "Html, CSS, Js",
     linkName: "Visit Site",
@@ -107,17 +183,17 @@ export const projectData = [
     description:
       "Quiz App is a game web application built with the simplest of technologies; HTML, CSS and JavaScript. Answer a few questions with each question, having its score point and at the end of the game, you see your total score.",
   },
-  {
-    name: "COVID CASES",
-    plang: "ReactJs, CSS",
-    linkName: "Visit Site",
-    linkUrl: "https://covidcasesbyfatimah.netlify.app/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1629393270/covid_rzrxdo.png",
-    title: "COVID CASES",
-    description:
-      "To keep track of covid cases in all states across Nigeria, covid cases website has helped with giving information about covid cases in nigeria nd keep all Nigerians abreast of the happenings in other states",
-  },
+  // {
+  //   name: "COVID CASES",
+  //   plang: "ReactJs, CSS",
+  //   linkName: "Visit Site",
+  //   linkUrl: "https://covidcasesbyfatimah.netlify.app/",
+  //   imageurl:
+  //     "https://res.cloudinary.com/dycyotaya/image/upload/v1629393270/covid_rzrxdo.png",
+  //   title: "COVID CASES",
+  //   description:
+  //     "To keep track of covid cases in all states across Nigeria, covid cases website has helped with giving information about covid cases in nigeria nd keep all Nigerians abreast of the happenings in other states",
+  // },
   // {
   //   name: "Task Tracker",
   //   plang: "ReactJs, NodeJs",
@@ -140,24 +216,24 @@ export const projectData = [
     description:
       "Image search is a web application that gives you the ability to search for random images and make use of them as you wish. search for cars, flowers and many more..",
   },
-  {
-    name: "Dev Portfolio",
-    plang: "ReactJs, CSS",
-    linkName: "Visit Site",
-    linkUrl: "https://d-porfolio.herokuapp.com/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png",
-    title: "Dev Portfolio",
-    description:
-      "Dev Porfolio is a website solely meant for a frontend engineer to showcase his or her past and present projects",
-  },
-  {
-    name: "FormPlus Templates",
-    plang: "ReactJs, CSS",
-    linkName: "Visit Site",
-    linkUrl: "https://formpluss.netlify.app/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png",
-    title: "FormPlus Templates",
-  },
+  // {
+  //   name: "Dev Portfolio",
+  //   plang: "ReactJs, CSS",
+  //   linkName: "Visit Site",
+  //   linkUrl: "https://d-porfolio.herokuapp.com/",
+  //   imageurl:
+  //     "https://res.cloudinary.com/dycyotaya/image/upload/v1629393297/portfolio_bfbfpc.png",
+  //   title: "Dev Portfolio",
+  //   description:
+  //     "Dev Porfolio is a website solely meant for a frontend engineer to showcase his or her past and present projects",
+  // },
+  // {
+  //   name: "FormPlus Templates",
+  //   plang: "ReactJs, CSS",
+  //   linkName: "Visit Site",
+  //   linkUrl: "https://formpluss.netlify.app/",
+  //   imageurl:
+  //     "https://res.cloudinary.com/dycyotaya/image/upload/v1629393266/formplus_bkyg7w.png",
+  //   title: "FormPlus Templates",
+  // },
 ];
