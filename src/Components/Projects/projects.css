@@ -1,7 +1,22 @@
 .proj-top {
+  width: 85%;
+  margin: 10rem auto;
+}
+.proj-top h2 {
+  font-weight: 600;
+  color: #818181;
+}
+.projects {
+  margin: 5rem auto;
+  display: grid;
+  row-gap: 5rem;
+}
+
+.proj-top {
   background-color: transparent;
   box-shadow: none;
 }
+
 .projects-header {
   width: 85%;
   height: 60px;

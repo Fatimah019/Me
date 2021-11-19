@@ -1,28 +1,70 @@
-import React, { useState } from "react";
-import { Links } from "../Header";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
-const Socials = ({ classname, url, icon }) => {
+const Socials = ({ classname, url, icon, link_name }) => {
   return (
     <li>
       <a href={url} className={(classname = "t-text-col")}>
         <i className={icon}></i>
+        <span>{link_name}</span>
       </a>
     </li>
   );
 };
 
 const Footer = () => {
-  const [active] = useState(false);
-
   const email = "daviesfatimah97@gmail.com";
 
-  // let getYear = new Date()
-  // getYear.getFullYear().toLocaleString()
   return (
     <div className="footer">
       <footer>
-        <div className="flex-col space-around">
+        <ul className="flex footer-social">
+          <Socials
+            url="https://github.com/Fatimah019"
+            classname
+            icon="fa fa-github"
+            link_name="Github"
+          />
+          <Socials
+            url="https://twitter.com/codewithfatimah"
+            classname
+            icon="fa fa-twitter"
+            link_name="Twitter"
+          />
+          <Link to="/">
+            {" "}
+            <img
+              src="https://res.cloudinary.com/dycyotaya/image/upload/v1616914740/fatimaheditedbckg_mefdki.jpg"
+              alt="logo"
+              className="img"
+            />
+          </Link>
+          <Socials
+            url="tel:+234 7088 78 0115"
+            classname
+            icon="fa fa-phone"
+            link_name="Phone"
+          />
+          <Socials
+            url={`mailto:${email}`}
+            classname
+            icon="fa fa-envelope"
+            link_name="Email"
+          />
+        </ul>
+
+        <div className="copy-right">
+          <Socials
+            url={`mailto:${email}`}
+            classname
+            link_name="daviesfatimah97@gmail.com"
+          />
+
+          {/* <pre className="t-text-col">2021 all rights reserved</pre> */}
+        </div>
+
+        {/* <div className="flex-col space-around">
           <div>
             <p>
               <b>Let's make something amazing together.</b>
@@ -73,7 +115,6 @@ const Footer = () => {
               <br />
             </ul>
           </nav>
-          {/* socials */}
           <div>
             <ul className="flex footer-social">
               <Socials
@@ -98,7 +139,7 @@ const Footer = () => {
               />
             </ul>
           </div>
-        </div>
+        </div> */}
       </footer>
     </div>
   );

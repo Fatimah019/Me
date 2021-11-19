@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Axiforma Light";
+  src: url("./font/Axiforma-Light.eot");
+  src: url("./font/Axiforma-Light.eot?#iefix") format("embedded-opentype"),
+    url("./font/Axiforma-Light.woff") format("woff"),
+    url("./font/Axiforma-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Axiforma Regular";
+  src: url("./font/Axiforma-Regular.ttf");
+  src: url("./font/Axiforma-Regular.eot") format("embedded-opentype"),
+    url("./font/Axiforma-Regular.woff") format("woff"),
+    url("./font/Axiforma-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Axiforma Bold";
+  src: url("./font/Axiforma-Heavy.eot");
+  src: url("./font/Axiforma-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("./font/Axiforma-Heavy.woff") format("woff"),
+    url("./font/Axiforma-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 1rem;
+  background-color: #020202;
+  font-family: "Axiforma Regular";
+}

@@ -1,45 +1,71 @@
-import React, { useState } from "react";
+import React from "react";
 import "./card.css";
-import Modal from "../../Constant/Modal";
 
 const ProjectCard = ({
   name,
+  appType,
   plang,
-  imageurl,
-  title,
   description,
   linkUrl,
+  projectLogo,
+  imageurl,
+  projectImg,
+  title,
   linkName,
   screenshots,
   isMobileVersion,
   googlePlayUrl,
 }) => {
-  const [modal, setModal] = useState(false);
-
   return (
     <div className="project_card">
-      <Modal
-        open={modal}
-        close={() => setModal(false)}
-        title={title}
-        description={description}
-        linkUrl={linkUrl}
-        linkName={linkName}
-        screenshots={screenshots && screenshots}
-        isMobileVersion={isMobileVersion && isMobileVersion}
-        googlePlayUrl={googlePlayUrl && googlePlayUrl}
-      />
-      {/* card header */}
-      <div className="flex space-between project_card_header">
-        <p>{name}</p>
-        <p>{plang}</p>
+      <div className="project_card_left">
+        {name && <p className="project_name">{name}</p>}
+
+        {appType && (
+          <div className="app_type">
+            {appType?.map((app, index) => (
+              <p key={index}>{app}</p>
+            ))}
+          </div>
+        )}
+
+        <div className="pg_langs">
+          {plang?.map((lang, index) => (
+            <p key={index}>{lang}</p>
+          ))}
+        </div>
+
+        {description && <p className="description">{description}</p>}
+
+        <div className="project_links">
+          {linkUrl && (
+            <a
+              href={linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="view_site"
+            >
+              View Site
+            </a>
+          )}
+          {isMobileVersion && (
+            <a href={googlePlayUrl}>
+              <img
+                src="/assets/images/GooglePlayStore.png"
+                alt="img"
+                className="project_card_image"
+              />
+            </a>
+          )}
+        </div>
+
+        {projectLogo && <img src={projectLogo} alt="projectLogo" />}
       </div>
-      {/* card body */}
-      <div className="project_card_body">
-        <button className="project_card_link" onClick={() => setModal(true)}>
-          See More
-        </button>
-        <img src={imageurl} alt="img" className="project_card_image" />
+      <div className="project_card_right">
+        {projectImg &&
+          projectImg?.map((img, index) => (
+            <img src={img} key={index} alt="project-img" />
+          ))}
       </div>
     </div>
   );
