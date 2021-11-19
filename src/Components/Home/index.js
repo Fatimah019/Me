@@ -43,7 +43,7 @@ const Home = () => {
           linkUrl="https://wellnessplus-admin.herokuapp.com/"
           description="Wellness Plus is a health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses."
           googlePlayUrl="https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp"
-          isMobileVersion
+          isMobileVersion="/assets/images/GooglePlayStore.png"
           appType={["Web App", "Android App"]}
           projectImg={[
             "/assets/images/wellness-hmo-enrollees.png",

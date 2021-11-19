@@ -43,15 +43,15 @@ const ProjectCard = ({
               href={linkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="view_site"
+              className="view_site project_card_link"
             >
               View Site
             </a>
           )}
           {isMobileVersion && (
-            <a href={googlePlayUrl}>
+            <a href={googlePlayUrl} className="project_card_link">
               <img
-                src="/assets/images/GooglePlayStore.png"
+                src={isMobileVersion}
                 alt="img"
                 className="project_card_image"
               />

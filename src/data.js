@@ -58,7 +58,7 @@ export const projectData = [
     imageurl: "/assets/images/wellness-login.png",
     description:
       "A health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses.",
-
+    mobileVersion: "/assets/images/GooglePlayStore.png",
     googlePlayUrl:
       "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
     appType: ["Web App", "Android App"],
@@ -80,6 +80,7 @@ export const projectData = [
       // "/assets/images/weatherapp-notes.png",
       "/assets/images/weatherapp-favorite.png",
     ],
+    appType: ["Web App"],
   },
   {
     name: "MePlayList",
@@ -97,6 +98,7 @@ export const projectData = [
       "/assets/images/meplaylist-three.png",
       "/assets/images/meplaylist-five.png",
     ],
+    appType: ["Web App", "Android App"],
   },
   {
     name: "Startup Lagos",
@@ -113,6 +115,7 @@ export const projectData = [
       "/assets/images/startup-investor.png",
       "/assets/images/startup-payment.png",
     ],
+    appType: ["Web App"],
   },
   {
     name: "Portfolio",
@@ -124,6 +127,7 @@ export const projectData = [
     description:
       "This is a website solely meant for a UI/UX Designer to showcase past and present projects",
     projectImg: ["/assets/images/shola.png", "/assets/images/shola-two.png"],
+    appType: ["Web App"],
   },
 
   {
@@ -140,6 +144,7 @@ export const projectData = [
       "/assets/images/slack-two.png",
       // "/assets/images/slack-three.png",
     ],
+    appType: ["Web App"],
   },
 
   {
@@ -157,6 +162,7 @@ export const projectData = [
       "/assets/images/googledocs-two.png",
       // "/assets/images/googledocs-three.png",
     ],
+    appType: ["Web App"],
   },
   // {
   //   name: "Github Repo Clone",
@@ -184,6 +190,7 @@ export const projectData = [
       "/assets/images/quiz-two.png",
       // "/assets/images/googledocs-three.png",
     ],
+    appType: ["Web App"],
   },
   // {
   //   name: "COVID CASES",
@@ -222,6 +229,7 @@ export const projectData = [
       "/assets/images/image-app-two.png",
       // "/assets/images/googledocs-three.png",
     ],
+    appType: ["Web App"],
   },
   // {
   //   name: "Dev Portfolio",

@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     // <div>
     <div className="proj-top">
-      <h2>Here are some projects I’ve worked on</h2>
+      <h3>Here are some projects I’ve worked on</h3>
       <div className="projects">
         {projectData.map((project, index) => (
           <ProjectCard
@@ -26,6 +26,7 @@ const Projects = () => {
             projectImg={project.projectImg}
             isMobileVersion={project.mobileVersion}
             googlePlayUrl={project.googlePlayUrl}
+            appType={project.appType}
           />
         ))}
       </div>
