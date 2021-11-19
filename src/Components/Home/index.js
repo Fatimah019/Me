@@ -9,6 +9,13 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const gotoProject = () => {
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
+  };
+
   // const email = "daviesfatimah97@gmail.com";
   return (
     <div>
@@ -23,7 +30,7 @@ const Home = () => {
           <span>FrontEnd Engineer</span> and I am passionate about developing
           beautiful products.
         </p>
-        <div className="go-to-selected-projects">
+        <div className="go-to-selected-projects" onClick={gotoProject}>
           <p>Selected Projects</p>
           <img
             src="/assets/images/go-to-project.png"
@@ -49,6 +56,7 @@ const Home = () => {
             "/assets/images/wellness-hmo-enrollees.png",
             "/assets/images/wellness-plus-dental.png",
           ]}
+          projectLogo="/assets/icons/Wellness-logo.png"
         />
         <ProjectCard
           name="Startup Lagos"
@@ -61,6 +69,7 @@ const Home = () => {
             "/assets/images/startup-profile.png",
             "/assets/images/startup-investor.png",
           ]}
+          projectLogo="/assets/icons/startup-logo.svg"
         />
         <ProjectCard
           name="MePlayList"
@@ -73,6 +82,7 @@ const Home = () => {
             "/assets/images/meplaylist-one.png",
             "/assets/images/meplaylist-two.png",
           ]}
+          projectLogo="/assets/icons/meplaylist-logo.png"
         />
       </div>
       {/* latest work */}

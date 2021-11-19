@@ -27,6 +27,7 @@ const Projects = () => {
             isMobileVersion={project.mobileVersion}
             googlePlayUrl={project.googlePlayUrl}
             appType={project.appType}
+            projectLogo={project.projectLogo}
           />
         ))}
       </div>

@@ -66,6 +66,7 @@ export const projectData = [
       "/assets/images/wellness-hmo-enrollees.png",
       "/assets/images/wellness-plus-dental.png",
     ],
+    projectLogo: "/assets/icons/Wellness-logo.png",
   },
   {
     name: "Weather App",
@@ -99,6 +100,7 @@ export const projectData = [
       "/assets/images/meplaylist-five.png",
     ],
     appType: ["Web App", "Android App"],
+    projectLogo: "/assets/icons/meplaylist-logo.png",
   },
   {
     name: "Startup Lagos",
@@ -116,6 +118,7 @@ export const projectData = [
       "/assets/images/startup-payment.png",
     ],
     appType: ["Web App"],
+    projectLogo: "/assets/icons/startup-logo.svg",
   },
   {
     name: "Portfolio",
@@ -128,6 +131,7 @@ export const projectData = [
       "This is a website solely meant for a UI/UX Designer to showcase past and present projects",
     projectImg: ["/assets/images/shola.png", "/assets/images/shola-two.png"],
     appType: ["Web App"],
+    projectLogo: "/assets/icons/shola-logo.png",
   },
 
   {

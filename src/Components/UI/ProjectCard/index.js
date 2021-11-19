@@ -19,7 +19,12 @@ const ProjectCard = ({
   return (
     <div className="project_card">
       <div className="project_card_left">
-        {name && <p className="project_name">{name}</p>}
+        <div className="name_logo">
+          {name && <p className="project_name">{name}</p>}
+          {projectLogo && (
+            <img src={projectLogo} alt="projectLogo" className="project_logo" />
+          )}
+        </div>
 
         {appType && (
           <div className="app_type">
@@ -45,7 +50,12 @@ const ProjectCard = ({
               rel="noopener noreferrer"
               className="view_site project_card_link"
             >
-              View Site
+              View Site{" "}
+              <img
+                src="/assets/icons/arrow.png"
+                alt=""
+                className="visit_site_arrow"
+              />
             </a>
           )}
           {isMobileVersion && (
@@ -58,8 +68,6 @@ const ProjectCard = ({
             </a>
           )}
         </div>
-
-        {projectLogo && <img src={projectLogo} alt="projectLogo" />}
       </div>
       <div className="project_card_right">
         {projectImg &&

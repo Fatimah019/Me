@@ -72,6 +72,9 @@
   margin-right: 2rem;
   white-space: nowrap;
 }
+.visit_site_arrow {
+  margin-left: 1rem;
+}
 .view_site:hover {
   color: #ffffff;
 }
@@ -103,6 +106,15 @@
 .project_card_image {
   object-fit: contain;
   width: 100%;
+}
+.name_logo {
+  display: flex;
+  align-items: center;
+}
+.project_logo {
+  object-fit: contain;
+  width: 25%;
+  height: 50%;
 }
 /* .project_card_header {
   padding: 0.25rem 1.5rem;
