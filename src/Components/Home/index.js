@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <div className="home-top">
         <img
-          src="https://res.cloudinary.com/dycyotaya/image/upload/v1629367382/IMG_20210819_110222_651_j5xmfs.jpg"
+          src="/assets/images/my-mem.jpg"
           alt="my avatar"
           className="my-avatar"
         />
@@ -23,7 +23,14 @@ const Home = () => {
           <span>FrontEnd Engineer</span> and I am passionate about developing
           beautiful products.
         </p>
-        <p className="go-to-selected-projects">Selected Projects</p>
+        <div className="go-to-selected-projects">
+          <p>Selected Projects</p>
+          <img
+            src="/assets/images/go-to-project.png"
+            alt="my avatar"
+            className="my-avatar"
+          />
+        </div>
       </div>
 
       {/*selected projects */}

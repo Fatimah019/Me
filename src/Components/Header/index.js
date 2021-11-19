@@ -25,6 +25,10 @@ const Header = () => {
     setShowNavmenu(false);
     setShowopenicon(true);
   };
+  const closeNavItem = () => {
+    closeNavMenu();
+    window.scrollTo(0, 0);
+  };
 
   // const changeHeaderOnScroll = () => {
   //   if (window.scrollY > 80) {
@@ -65,21 +69,21 @@ const Header = () => {
       <Links url="/" classname="name" name={"Fatimah Davies"} />
       <nav className="socials hide-mobile" style={style}>
         <ul>
-          <li>
+          <li onClick={closeNavItem}>
             <Links
               url="/"
               classname={active ? "active" : "inactive"}
               name={"About Me"}
             />
           </li>
-          <li>
+          <li onClick={closeNavItem}>
             <Links
               url="/projects"
               classname={active ? "active" : "inactive"}
               name={"Projects"}
             />
           </li>
-          <li>
+          <li onClick={closeNavItem}>
             <Links
               url="/contact"
               classname={active ? "active" : "inactive"}
@@ -96,32 +100,6 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-
-      {/* right header */}
-      {/* <div className="socials hide-mobile" style={style}>
-        <ul>
-          <li>
-            <a href="https://github.com/Fatimah019">
-              <i className="fa fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/fatimahdavies">
-              <i className="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="tel:+234 7088 78 0115">
-              <i className="fa fa-phone"></i>
-            </a>
-          </li>
-          <li>
-            <a href={`mailto:${"daviesfatimah97@gmail.com"}`}>
-              <i className="fa fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </div> */}
 
       <div className="show-mobile">
         {showopenicon ? (

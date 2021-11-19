@@ -1,18 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./index.css";
-
-// const Socials = ({ classname, url, icon, link_name }) => {
-//   return (
-//     <li>
-//       <a href={url} className={(classname = "t-text-col")}>
-//         <i className={icon}></i>
-//         <span>{link_name}</span>
-//       </a>
-//     </li>
-//   );
-// };
 
 const Contact = () => {
   const email = "daviesfatimah97@gmail.com";
