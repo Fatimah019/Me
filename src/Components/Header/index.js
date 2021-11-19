@@ -73,7 +73,7 @@ const Header = () => {
             <Links
               url="/"
               classname={active ? "active" : "inactive"}
-              name={"About Me"}
+              name={"Home"}
             />
           </li>
           <li onClick={closeNavItem}>
@@ -95,7 +95,7 @@ const Header = () => {
               className="inactive"
               href="https://docs.google.com/document/d/16GwKlkmfU3cXcugC2iWao7ysI_90NfpnsEc22Wpxj6w/edit?usp=sharing"
             >
-              CV
+              Resume
             </a>
           </li>
         </ul>
