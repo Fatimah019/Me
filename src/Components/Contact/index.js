@@ -11,7 +11,7 @@ const Contact = () => {
         <p className="contact-top">You’re always welcome to say hi! 😌</p>
         <p className="contact-bottom">
           If you’d like to work with me, discuss a project or just say hi, you
-          candrop me an email - <a href={`mailto:${email}`}>{email}</a>
+          can drop me an email - <a href={`mailto:${email}`}>{email}</a>
         </p>
       </div>
     </div>

@@ -1,3 +1,27 @@
+export const experience = [
+  {
+    company_name: "Hazon Tech",
+    company_other_info: [
+      "Hazon Tech, Gbagada, Lagos, Nigeria.",
+      "May 2021 - Present",
+    ],
+  },
+  {
+    company_name: "Meplaylist",
+    company_other_info: [
+      "Meplaylist, Ikeja, Lagos, Nigeria.",
+      "September 2020 - February 2021",
+    ],
+  },
+  {
+    company_name: "HNG",
+    company_other_info: [
+      "HNG, Yaba, Lagos, Nigeria.",
+      "August 2019 - November 2019",
+    ],
+  },
+];
+
 export const skills = [
   {
     name: "HTML",
@@ -176,7 +200,7 @@ export const projectData = [
     title: "Simple Landing Page",
     description:
       "This is a simple landing page built with vanilla html, css and javascript",
-    // projectImg: ["/assets/images/landingpage.png"],
+    projectImg: ["/assets/images/landingpage.png"],
     appType: ["Web App"],
     // projectLogo: "/assets/icons/shola-logo.png",
   },
