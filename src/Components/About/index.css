@@ -1,0 +1,27 @@
+.contact {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+.contact p {
+  text-align: center;
+}
+.contact-top {
+  font-size: 2.5rem;
+  color: #c4c4c4;
+  margin-bottom: 1.5rem;
+  font-family: Axiforma Bold;
+}
+.contact-bottom {
+  line-height: 2rem;
+}
+.contact-bottom,
+.contact-bottom a {
+  color: rgba(196, 196, 196, 0.96);
+}
+.contact-bottom a {
+  cursor: pointer;
+}

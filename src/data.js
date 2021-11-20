@@ -69,6 +69,23 @@ export const projectData = [
     projectLogo: "/assets/icons/Wellness-logo.png",
   },
   {
+    name: "My Retailar",
+    plang: ["ReactJs", "Redux", "Material-Ui"],
+    linkName: "Visit Site",
+    linkUrl: "https://myretailar.com/",
+    imageurl: "/assets/images/retailar-one.png",
+    description:
+      "This is dedicated to making customers you get quality products and services without stress or hassle.",
+    googlePlayUrl:
+      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
+    appType: ["Web App"],
+    projectImg: [
+      "/assets/images/retailar-one.png",
+      "/assets/images/retailar-two.png",
+    ],
+    projectLogo: "/assets/icons/retailar-logo.png",
+  },
+  {
     name: "Weather App",
     plang: ["TypeScript", "ReactJs", "Redux", "Styled-Components"],
     linkName: "Visit Site",
@@ -149,6 +166,19 @@ export const projectData = [
       // "/assets/images/slack-three.png",
     ],
     appType: ["Web App"],
+  },
+  {
+    name: "Landing Page",
+    plang: ["HTML", "CSS", "JavaScript"],
+    linkName: "Visit Site",
+    linkUrl: "https://landingapge.vercel.app/",
+    imageurl: "/assets/images/landingpage.png",
+    title: "Simple Landing Page",
+    description:
+      "This is a simple landing page built with vanilla html, css and javascript",
+    // projectImg: ["/assets/images/landingpage.png"],
+    appType: ["Web App"],
+    // projectLogo: "/assets/icons/shola-logo.png",
   },
 
   {

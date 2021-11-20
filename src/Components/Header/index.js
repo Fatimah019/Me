@@ -78,6 +78,13 @@ const Header = () => {
           </li>
           <li onClick={closeNavItem}>
             <Links
+              url="/about"
+              classname={active ? "active" : "inactive"}
+              name={"About Me"}
+            />
+          </li>
+          <li onClick={closeNavItem}>
+            <Links
               url="/projects"
               classname={active ? "active" : "inactive"}
               name={"Projects"}
