@@ -16,9 +16,9 @@ const About = () => {
             I’m Fatimah!. I’m a frontend developer based in Lagos, Nigeria. In
             my years of being a frontend developer, I have worked on a wide
             range of projects ranging from small to large scale. I have worked
-            on E-Commerce, Helath-Care and BlogSite Applications. I’m passionate
-            about building beautiful and functional user interfaces and have fun
-            while at it!
+            on Fintech, E-Commerce, Helath-Care and BlogSite Applications. I’m
+            passionate about building beautiful and functional user interfaces
+            and have fun while at it!
           </p>
         </div>
         <div>

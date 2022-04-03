@@ -1,9 +1,16 @@
 export const experience = [
   {
+    company_name: "Klahsa",
+    company_other_info: [
+      "7 Ibiyinka Olorunbe, Victoria Island, Lagos, Nigeria",
+      "January 2022 - Present",
+    ],
+  },
+  {
     company_name: "Hazon Tech",
     company_other_info: [
       "Hazon Tech, Gbagada, Lagos, Nigeria.",
-      "May 2021 - Present",
+      "May 2021 - January 2022",
     ],
   },
   {
