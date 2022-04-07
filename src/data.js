@@ -82,6 +82,23 @@ export const skills = [
 
 export const projectData = [
   {
+    name: "My Retailar",
+    plang: ["ReactJs", "Redux", "Material-Ui"],
+    linkName: "Visit Site",
+    linkUrl: "https://myretailar.com/",
+    imageurl: "/assets/images/retailar-one.png",
+    description:
+      "This is dedicated to making customers you get quality products and services without stress or hassle.",
+    googlePlayUrl:
+      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
+    appType: ["Web App"],
+    projectImg: [
+      "/assets/images/retailar-one.png",
+      "/assets/images/retailar-two.png",
+    ],
+    projectLogo: "/assets/icons/retailar-logo.png",
+  },
+  {
     name: "Wellness Plus",
     plang: ["ReactJs", "Redux", "Material-Ui"],
     linkName: "Visit Site",
@@ -98,23 +115,6 @@ export const projectData = [
       "/assets/images/wellness-plus-dental.png",
     ],
     projectLogo: "/assets/icons/Wellness-logo.png",
-  },
-  {
-    name: "My Retailar",
-    plang: ["ReactJs", "Redux", "Material-Ui"],
-    linkName: "Visit Site",
-    linkUrl: "https://myretailar.com/",
-    imageurl: "/assets/images/retailar-one.png",
-    description:
-      "This is dedicated to making customers you get quality products and services without stress or hassle.",
-    googlePlayUrl:
-      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
-    appType: ["Web App"],
-    projectImg: [
-      "/assets/images/retailar-one.png",
-      "/assets/images/retailar-two.png",
-    ],
-    projectLogo: "/assets/icons/retailar-logo.png",
   },
   {
     name: "Weather App",
