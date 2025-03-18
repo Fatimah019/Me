@@ -44,10 +44,27 @@ const Home = () => {
 
       <div className="selected-projects">
         <ProjectCard
+          name="Beam Dynamics"
+          plang={["ReactJs", "Mantine", "React-Query"]}
+          linkName="Visit Site"
+          linkUrl="https://www.beamdynamics.io/"
+          description="An Asset
+        intelligent platform built to leverage industry-leading data and tools
+        to improve operational efficiency, boost uptime, and increase ROI from
+        your technology assets, facilities & teams."
+          appType={["Web App"]}
+          projectImg={[
+            "/assets/images/beam-signin.png",
+            "/assets/images/beam-home.png",
+          ]}
+          projectLogo="/assets/icons/beam.svg"
+        />
+
+        <ProjectCard
           name="Wellness Plus"
           plang={["ReactJs", "Redux", "Material-Ui"]}
           linkName="Visit Site"
-          linkUrl="https://wellnessplus-admin.herokuapp.com/"
+          linkUrl="https://wellnessplus.io"
           description="Wellness Plus is a health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses."
           googlePlayUrl="https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp"
           isMobileVersion="/assets/images/GooglePlayStore.png"
@@ -59,23 +76,10 @@ const Home = () => {
           projectLogo="/assets/icons/Wellness-logo.png"
         />
         <ProjectCard
-          name="Startup Lagos"
-          plang={["ReactJs", "MaterialUi", "Redux"]}
-          linkName="Visit Site"
-          linkUrl="https://www.startuplagos.net/"
-          description="Startup Lagos targets being the largest tech ecosystem, to offer retail and institutional investors the huge opportunities of tapping into the vast potential of early-stage tech-driven startup initiatives to blossom into regional and continental scale solutions to Africa’s diverse challenges"
-          appType={["Web App"]}
-          projectImg={[
-            "/assets/images/startup-profile.png",
-            "/assets/images/startup-investor.png",
-          ]}
-          projectLogo="/assets/icons/startup-logo.svg"
-        />
-        <ProjectCard
           name="MePlayList"
           plang={["ReactJs", "CSS", "NodeJs"]}
           linkName="Visit Site"
-          linkUrl="https://app.meplaylist.com/"
+          linkUrl="https://www.meplaylist.com/"
           description="MePlaylist is a digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds"
           appType={["Web App", "Android App"]}
           projectImg={[

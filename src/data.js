@@ -1,9 +1,13 @@
 export const experience = [
   {
+    company_name: "Beam Dynamics",
+    company_other_info: ["Winston-Salem, NC", "October 2022 - January 2025"],
+  },
+  {
     company_name: "Klahsa",
     company_other_info: [
       "7 Ibiyinka Olorunbe, Victoria Island, Lagos, Nigeria",
-      "January 2022 - Present",
+      "January 2022 - January 2023",
     ],
   },
   {
@@ -55,16 +59,13 @@ export const skills = [
     name: "Redux",
   },
   {
-    name: "MongoDb",
+    name: "React-Query",
   },
   {
-    name: "Node.Js",
+    name: "Supabase",
   },
   {
-    name: "VueJs",
-  },
-  {
-    name: "Tailwind CSS",
+    name: "Mantine",
   },
   {
     name: "Material-Ui",
@@ -73,14 +74,76 @@ export const skills = [
     name: "Styled-Components",
   },
   {
-    name: "BootStrap",
-  },
-  {
     name: "Jira",
   },
 ];
 
 export const projectData = [
+  {
+    name: "Beam Dynamics",
+    plang: ["ReactJs", "Mantine", "React-Query"],
+    linkName: "Visit Site",
+    linkUrl: "https://www.beamdynamics.io/",
+    imageurl: "/assets/images/retailar-one.png",
+    description:
+      "An Asset intelligent platform built to leverage industry-leading data and tools to improve operational efficiency, boost uptime, and increase ROI from your technology assets, facilities & teams.",
+    appType: ["Web App"],
+    projectImg: [
+      "/assets/images/beam-signin.png",
+      "/assets/images/beam-home.png",
+    ],
+    projectLogo: "/assets/icons/beam.svg",
+  },
+  {
+    name: "Wellness Plus",
+    plang: ["ReactJs", "Redux", "Material-Ui"],
+    linkName: "Visit Site",
+    linkUrl: "https://wellnessplus.io",
+    imageurl: "/assets/images/wellness-login.png",
+    description:
+      "A health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses.",
+    mobileVersion: "/assets/images/GooglePlayStore.png",
+    googlePlayUrl:
+      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp&pli=1",
+    appType: ["Web App", "Android App"],
+    projectImg: [
+      "/assets/images/wellness-hmo-enrollees.png",
+      "/assets/images/wellness-plus-dental.png",
+    ],
+    projectLogo: "/assets/icons/Wellness-logo.png",
+  },
+  {
+    name: "MePlayList",
+    plang: ["ReactJs", "CSS", "NodeJs"],
+    linkName: "Visit Site",
+    linkUrl: "https://www.meplaylist.com/",
+    imageurl:
+      "https://res.cloudinary.com/dycyotaya/image/upload/v1629393291/meplaylist_nf8sdy.png",
+    title: "Meplaylist",
+    description:
+      "A digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds",
+    projectImg: [
+      // "/assets/images/meplaylist-one.png",
+      // "/assets/images/meplaylist-two.png",
+      "/assets/images/meplaylist-three.png",
+      "/assets/images/meplaylist-five.png",
+    ],
+    appType: ["Web App", "Android App"],
+    projectLogo: "/assets/icons/meplaylist-logo.png",
+  },
+  {
+    name: "Portfolio",
+    plang: ["ReactJs", "CSS", "Material-UI"],
+    linkName: "Visit Site",
+    linkUrl: "https://akintayo-shola.vercel.app/",
+    imageurl: "/assets/images/shola.png",
+    title: "Portfolio",
+    description:
+      "This is a website solely meant for a UI/UX Designer to showcase past and present projects",
+    projectImg: ["/assets/images/shola.png", "/assets/images/shola-two.png"],
+    appType: ["Web App"],
+    projectLogo: "/assets/icons/shola-logo.png",
+  },
   {
     name: "My Retailar",
     plang: ["ReactJs", "Redux", "Material-Ui"],
@@ -99,24 +162,6 @@ export const projectData = [
     projectLogo: "/assets/icons/retailar-logo.png",
   },
   {
-    name: "Wellness Plus",
-    plang: ["ReactJs", "Redux", "Material-Ui"],
-    linkName: "Visit Site",
-    linkUrl: "https://wellnessplus-admin.herokuapp.com/",
-    imageurl: "/assets/images/wellness-login.png",
-    description:
-      "A health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses.",
-    mobileVersion: "/assets/images/GooglePlayStore.png",
-    googlePlayUrl:
-      "https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp",
-    appType: ["Web App", "Android App"],
-    projectImg: [
-      "/assets/images/wellness-hmo-enrollees.png",
-      "/assets/images/wellness-plus-dental.png",
-    ],
-    projectLogo: "/assets/icons/Wellness-logo.png",
-  },
-  {
     name: "Weather App",
     plang: ["TypeScript", "ReactJs", "Redux", "Styled-Components"],
     linkName: "Visit Site",
@@ -130,25 +175,6 @@ export const projectData = [
       "/assets/images/weatherapp-favorite.png",
     ],
     appType: ["Web App"],
-  },
-  {
-    name: "MePlayList",
-    plang: ["ReactJs", "CSS", "NodeJs"],
-    linkName: "Visit Site",
-    linkUrl: "https://app.meplaylist.com/",
-    imageurl:
-      "https://res.cloudinary.com/dycyotaya/image/upload/v1629393291/meplaylist_nf8sdy.png",
-    title: "Meplaylist",
-    description:
-      "A digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds",
-    projectImg: [
-      // "/assets/images/meplaylist-one.png",
-      // "/assets/images/meplaylist-two.png",
-      "/assets/images/meplaylist-three.png",
-      "/assets/images/meplaylist-five.png",
-    ],
-    appType: ["Web App", "Android App"],
-    projectLogo: "/assets/icons/meplaylist-logo.png",
   },
   {
     name: "Startup Lagos",
@@ -168,20 +194,6 @@ export const projectData = [
     appType: ["Web App"],
     projectLogo: "/assets/icons/startup-logo.svg",
   },
-  {
-    name: "Portfolio",
-    plang: ["ReactJs", "CSS", "Material-UI"],
-    linkName: "Visit Site",
-    linkUrl: "https://akintayo-shola.vercel.app/",
-    imageurl: "/assets/images/shola.png",
-    title: "Portfolio",
-    description:
-      "This is a website solely meant for a UI/UX Designer to showcase past and present projects",
-    projectImg: ["/assets/images/shola.png", "/assets/images/shola-two.png"],
-    appType: ["Web App"],
-    projectLogo: "/assets/icons/shola-logo.png",
-  },
-
   {
     name: "Slack Web App Clone",
     plang: ["ReactJs", "Redux", "Firebase"],

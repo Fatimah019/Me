@@ -21,19 +21,18 @@ const Footer = () => {
       <footer>
         <ul className="flex footer-social">
           <Socials
+            url="https://www.linkedin.com/in/fatimahdavies"
+            classname
+            icon="fa fa-linkedin"
+            link_name="Linkedin"
+          />
+          <Socials
             url="https://github.com/Fatimah019"
             classname
             icon="fa fa-github"
             link_name="Github"
           />
-          <Socials
-            url="https://twitter.com/codewithfatimah"
-            classname
-            icon="fa fa-twitter"
-            link_name="Twitter"
-          />
           <Link to="/">
-            {" "}
             <img
               src="https://res.cloudinary.com/dycyotaya/image/upload/v1616914740/fatimaheditedbckg_mefdki.jpg"
               alt="logo"
