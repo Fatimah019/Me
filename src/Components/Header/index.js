@@ -11,7 +11,6 @@ export const Links = ({ name, url, classname }) => {
 };
 
 const Header = () => {
-  // const [headStyle, setHeadStyle] = useState(Object);
   const [showNavmenu, setShowNavmenu] = useState(false);
   const [showopenicon, setShowopenicon] = useState(true);
   const [active] = useState(false);
@@ -99,8 +98,10 @@ const Header = () => {
           </li>
           <li>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="inactive"
-              href="https://docs.google.com/document/d/1eqC2AC9WwU6hv2fj2_wLzIBJto5f2XXplffQsEqpypg/edit?tab=t.0"
+              href="https://docs.google.com/document/d/1pKYFxrlNoxOxl-S7N9XJG9J09h7Z89wop4g9LdePrT4/edit?tab=t.0"
             >
               Resume
             </a>

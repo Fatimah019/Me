@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./home.css";
 
 import ProjectCard from "../UI/ProjectCard";
+import { projectData } from "../../data";
 
 const Home = () => {
   useEffect(() => {
@@ -16,7 +17,6 @@ const Home = () => {
     });
   };
 
-  // const email = "daviesfatimah97@gmail.com";
   return (
     <div>
       <div className="home-top">
@@ -28,7 +28,7 @@ const Home = () => {
         <p className="home-top-about">
           Hello! 👋🏼 My name is Fatimah Davies. I’m a{" "}
           <span>FrontEnd Engineer</span> and I am passionate about developing
-          beautiful products.
+          magical products.
         </p>
         <div className="go-to-selected-projects" onClick={gotoProject}>
           <p>Selected Projects</p>
@@ -43,51 +43,23 @@ const Home = () => {
       {/*selected projects */}
 
       <div className="selected-projects">
-        <ProjectCard
-          name="Beam Dynamics"
-          plang={["ReactJs", "Mantine", "React-Query"]}
-          linkName="Visit Site"
-          linkUrl="https://www.beamdynamics.io/"
-          description="An Asset
-        intelligent platform built to leverage industry-leading data and tools
-        to improve operational efficiency, boost uptime, and increase ROI from
-        your technology assets, facilities & teams."
-          appType={["Web App"]}
-          projectImg={[
-            "/assets/images/beam-signin.png",
-            "/assets/images/beam-home.png",
-          ]}
-          projectLogo="/assets/icons/beam.svg"
-        />
-
-        <ProjectCard
-          name="Wellness Plus"
-          plang={["ReactJs", "Redux", "Material-Ui"]}
-          linkName="Visit Site"
-          linkUrl="https://wellnessplus.io"
-          description="Wellness Plus is a health care application that is aimed at bridging the gap between the average nigerian and the exorbiant health prices. Making health care benefits accessible and affordable to the masses."
-          googlePlayUrl="https://play.google.com/store/apps/details?id=com.hazonholdings.android.wellnesspatientapp"
-          isMobileVersion="/assets/images/GooglePlayStore.png"
-          appType={["Web App", "Android App"]}
-          projectImg={[
-            "/assets/images/wellness-hmo-enrollees.png",
-            "/assets/images/wellness-plus-dental.png",
-          ]}
-          projectLogo="/assets/icons/Wellness-logo.png"
-        />
-        <ProjectCard
-          name="MePlayList"
-          plang={["ReactJs", "CSS", "NodeJs"]}
-          linkName="Visit Site"
-          linkUrl="https://www.meplaylist.com/"
-          description="MePlaylist is a digital entertainment and streaming service that grants music lovers access to stream and download unlimited music. MePlaylist studies your tastes and preferences, creates custom-curated playlists on your feeds"
-          appType={["Web App", "Android App"]}
-          projectImg={[
-            "/assets/images/meplaylist-one.png",
-            "/assets/images/meplaylist-two.png",
-          ]}
-          projectLogo="/assets/icons/meplaylist-logo.png"
-        />
+        {projectData.slice(0, 3).map((project, index) => (
+          <ProjectCard
+            key={index}
+            name={project.name}
+            plang={project?.plang}
+            linkName={project.linkName}
+            linkUrl={project.linkUrl}
+            imageurl={project.imageurl}
+            title={project.title}
+            description={project.description}
+            projectImg={project.projectImg}
+            isMobileVersion={project.mobileVersion}
+            googlePlayUrl={project.googlePlayUrl}
+            appType={project.appType}
+            projectLogo={project.projectLogo}
+          />
+        ))}
       </div>
       {/* latest work */}
       {/* <div className="latest-works-o">

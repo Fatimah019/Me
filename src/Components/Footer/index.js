@@ -33,11 +33,7 @@ const Footer = () => {
             link_name="Github"
           />
           <Link to="/">
-            <img
-              src="https://res.cloudinary.com/dycyotaya/image/upload/v1616914740/fatimaheditedbckg_mefdki.jpg"
-              alt="logo"
-              className="img"
-            />
+            <img src="assets/images/fati.jpg" alt="logo" className="img" />
           </Link>
           <Socials
             url="tel:+234 7088 78 0115"
